@@ -8,20 +8,25 @@ export default {
       },
       maxWidth: {
         containerWidth: "1250px",
-        textWidth: "42rem",
+        textWidth: "45rem",
       },
       padding: {
         paddingBtn: "0.65rem 1rem",
       },
       width: {
         logoWidth: "8rem",
-        // heroWidth: "45rem",
+        heroWidth: "40rem",
         // HeroimgWidth: "66rem",
         // StoriesImage2: "61rem",
         // storiesImages: "26.33rem",
       },
+      fontFamily:{
+        logoFonts:"Rubik Maps, system-ui;"
+      }
     },
   },
-  plugins: [],
+  plugins: [
+     
+  ],
 };
 
