@@ -9,10 +9,11 @@ export default {
       maxWidth: {
         containerWidth: "1250px",
         textWidth: "55rem",
+        paragraphText:"35rem",
       },
       padding: {
         paddingBtn: "0.65rem 1rem",
-        
+
       },
 
       backgroundImage: {
