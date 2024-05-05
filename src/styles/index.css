@@ -8,9 +8,10 @@
   html {
     font-family: "Overpass", sans-serif;
   }
-  body{
-    @apply bg-black
-  }
+  
+}
+.hero__Section-background{
+  @apply bg-[url('/assets/HeroSection.jpg')] bg-top   bg-cover bg-no-repeat w-auto h-heroHeight
 }
 .nav__logo{
   @apply font-logoFonts text-primaryColor text-3xl
@@ -19,8 +20,8 @@
     @apply bg-primaryColor text-white rounded-sm p-paddingBtn text-sm font-semibold  shadow-sm;
 }
 .hero-section{
-    @apply mt-36 max-w-containerWidth mx-auto flex
+    @apply pt-36 max-w-containerWidth mx-auto 
 }
-.hero-image{
+/* .hero-image{
   @apply w-heroWidth rounded
-}
+} */

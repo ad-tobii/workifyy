@@ -1,6 +1,6 @@
 
 import Nav from "../Home/Component/Nav"
-import HomeHeroSection from "./Component/HomeHeroSection";
+
 
 function Home() {
   return (
@@ -8,10 +8,10 @@ function Home() {
         <div>
             <Nav/>
         </div>
-
+{/* 
         <div>
           <HomeHeroSection/>
-        </div>
+        </div> */}
     </div>
   )
 }

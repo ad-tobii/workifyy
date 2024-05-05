@@ -12,7 +12,7 @@ export default function Nav() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div>
+    <div className="hero__Section-background">
       <header className="absolute inset-x-0 top-0 z-50 border-b">
         <nav
           className="flex items-center justify-between p-6 lg:px-8"
@@ -20,7 +20,13 @@ export default function Nav() {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5 text-white">
-             <span className="nav__logo">WORKIFYY</span>
+              <span className="nav__logo">WORKIFYY</span>
+
+              {/* <img
+                className="w-logoWidth -ml-11"
+                src="/assets/workifyylogo1.png"
+                alt=""
+              /> */}
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -102,7 +108,31 @@ export default function Nav() {
         </Dialog>
       </header>
 
-     
+      <div className="hero-section">
+        <section>
+          {/* <img
+          className="w-logoWidth -ml-11"
+          src="/assets/workifyylogo1.png"
+          alt=""
+        /> */}
+          <div className="text-white pt-28">
+            <h3 className="text-5xl tracking-widest max-w-textWidth leading-relaxed">
+              Local Service, Global Standards:{" "}
+              <span className="">Your Trusted Connection</span>
+            </h3>
+          </div>
+          <p>
+            Discover the pinnacle of local service, meticulously crafted to meet
+            global standards of excellence and reliability.
+          </p>
+
+          <button className="PrimaryBtn">GET STARTED</button>
+        </section>
+
+        {/* <section>
+        <img src="/assets/HeroSection.jpg" alt="" className="hero-image" />
+      </section> */}
+      </div>
     </div>
   );
 }

@@ -8,25 +8,28 @@ export default {
       },
       maxWidth: {
         containerWidth: "1250px",
-        textWidth: "45rem",
+        textWidth: "55rem",
       },
       padding: {
         paddingBtn: "0.65rem 1rem",
+        
       },
+
+      backgroundImage: {
+        heropattern: "url('/assests/HeroSection.jpg')",
+      },
+
       width: {
         logoWidth: "8rem",
         heroWidth: "40rem",
-        // HeroimgWidth: "66rem",
-        // StoriesImage2: "61rem",
-        // storiesImages: "26.33rem",
       },
-      fontFamily:{
-        logoFonts:"Rubik Maps, system-ui;"
-      }
+      height:{
+       heroHeight:"100vh"
+      },
+      fontFamily: {
+        logoFonts: "Rubik Maps, system-ui;",
+      },
     },
   },
-  plugins: [
-     
-  ],
+  plugins: [],
 };
-
