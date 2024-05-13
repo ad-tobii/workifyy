@@ -3,6 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+    
       colors: {
         primaryColor: "#32CD32",
       },
@@ -19,6 +20,7 @@ export default {
       backgroundImage: {
         heropattern: "url('/assests/HeroSection.jpg')",
       },
+      
 
       width: {
         logoWidth: "8rem",
