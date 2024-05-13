@@ -7,11 +7,15 @@
 @layer base {
   html {
     font-family: "Overpass", sans-serif;
+    
   }
+ body{
+  @apply bg-black
+  } 
   
 }
 .hero__Section-background{
-  @apply bg-[url('/assets/HeroSection.jpg')] bg-top   bg-cover bg-no-repeat w-auto h-heroHeight
+  @apply bg-[url('/assets/top-view.jpg')] bg-center bg-cover bg-no-repeat w-auto h-heroHeight
 }
 .nav__logo{
   @apply font-logoFonts text-primaryColor text-3xl
