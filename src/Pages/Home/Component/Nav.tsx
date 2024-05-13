@@ -7,8 +7,10 @@ const navigation = [
   { name: "Log In", href: "#" },
   { name: "Explore", href: "#" },
 ];
-
-export default function Nav({children}) {
+type NavProps = {
+  children: React.ReactNode;
+}
+export default function Nav({children} : NavProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
