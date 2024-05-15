@@ -7,7 +7,7 @@ function Section() {
     <div className="flex justify-center align-middle self-center content-center gap-20 mt-28">
       <div>
         <img
-          src="/assets/workifyy_illustration.jpg"
+          src="/assets/Workifyy-illustration.png"
           className="w-[30rem] rounded"
           alt=""
         />

@@ -9,13 +9,14 @@
     font-family: "Overpass", sans-serif;
     
   }
- body{
-  @apply bg-black
-  } 
   
+  body {
+      @apply bg-gradient-to-tr from-[#2c3e50] to-[#000000]; 
+  }
 }
+
 .hero__Section-background{
-  @apply bg-[url('/assets/top-view.jpg')] bg-center bg-cover bg-no-repeat w-auto h-heroHeight
+  @apply bg-[url('/assets/HeroSection.jpg')] bg-center bg-cover bg-no-repeat w-auto h-heroHeight
 }
 .nav__logo{
   @apply font-logoFonts text-primaryColor text-3xl
@@ -25,6 +26,9 @@
 }
 .hero-section{
     @apply pt-36 max-w-containerWidth mx-auto 
+}
+.bg-client_section{
+  @apply bg-[url('/assets/ClientSection.jpg')]  bg-clientSection bg-no-repeat rounded-lg w-auto h-clientSectionHeight
 }
 /* .hero-image{
   @apply w-heroWidth rounded

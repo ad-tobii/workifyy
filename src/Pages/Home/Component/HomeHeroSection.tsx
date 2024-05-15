@@ -1,7 +1,7 @@
 function HomeHeroSection() {
   return (
     <div>
-      <div className="hero-section">
+      <div className="hero-section z-50 relative">
         <section>
           {/* <img
           className="w-logoWidth -ml-11"
