@@ -8,7 +8,7 @@ function HomeHeroSection() {
           src="/assets/workifyylogo1.png"
           alt=""
         /> */}
-          <div className="text-white pt-28">
+          <div className="text-white pt-[4rem]">
             <h3 className="text-5xl tracking-widest max-w-textWidth leading-relaxed">
               Local Service, Global Standards:{" "}
               <span className="text-primaryColor">Your Trusted Connection</span>
