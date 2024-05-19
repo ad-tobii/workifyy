@@ -20,6 +20,9 @@ export default {
       backgroundImage: {
         heropattern: "url('/assests/HeroSection.jpg')",
       },
+      backgroundSize:{
+      clientSection:"75rem",
+      },
       
 
       width: {
@@ -27,7 +30,9 @@ export default {
         heroWidth: "40rem",
       },
       height:{
-       heroHeight:"100vh"
+       heroHeight:"100vh",
+       clientSectionHeight:"60vh",
+       overlayHeight:"100vh"
       },
       fontFamily: {
         logoFonts: "Rubik Maps, system-ui;",
