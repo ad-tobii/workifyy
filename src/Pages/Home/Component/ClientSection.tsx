@@ -3,8 +3,8 @@
 function ClientSection() {
   return (
     <div>
-      <section className="mx-auto max-w-[150rem] px-8">
-        <div className="mt-[8rem] w-full rounded-[.6rem] bg-[url('/assets/ClientSection.jpg')] bg-cover bg-center bg-no-repeat py-[5rem]">
+      <section className="mx-auto max-w-[150rem] px-8 miniTablet:px-6">
+        <div className="mt-[8rem] w-full rounded-[.6rem] bg-[url('/assets/ClientSection.jpg')] bg-cover bg-center bg-no-repeat py-[5rem] miniTablet:bg-center">
           <div>
             <h2 className="max-w-[45rem] pl-5 text-[2.8rem] leading-[5rem] text-white ">
               Find Technicians Your Way
@@ -15,22 +15,22 @@ function ClientSection() {
               things done—from quick turnarounds to big transformations.
             </p>
 
-            <section className="flex gap-14 pl-5 pt-12">
-              <div className="w-72 h-32 rounded-md bg-[#32CD32] hover:bg-white hover:text-green-500 cursor-pointer">
+            <section className="flex gap-12 pl-5 pt-12 laptop:flex-col miniTablet:pl-3">
+              <div className="w-72 h-32 rounded-md bg-[#32CD32] hover:bg-white hover:text-green-500 cursor-pointer laptop:w-[22rem]">
                 <h3 className="text-white text-[2rem] pl-3 pt-1 ">
                   Lorem ipsum dolor sit amet.
                 </h3>
                 <p className="text-white text-[1rem] pl-3">Lorem ipsum </p>
               </div>
 
-              <div className="w-72 h-32 rounded-md bg-[#32CD32]">
+              <div className="w-72 h-32 rounded-md bg-[#32CD32] laptop:w-[22rem]">
                 <h3 className="text-white text-[2rem] pl-3 pt-1">
                   Lorem ipsum dolor sit amet.
                 </h3>
                 <p className="text-white text-[1rem] pl-3">Lorem ipsum </p>
               </div>
 
-              <div className="w-72 h-32 rounded-md bg-[#32CD32]">
+              <div className="w-72 h-32 rounded-md bg-[#32CD32] laptop:w-[22rem]">
                 <h3 className="text-white text-[2rem] pl-3 pt-1">
                   Lorem ipsum dolor sit amet.
                 </h3>

@@ -6,15 +6,14 @@ const BaseFooter = () => {
 
   return (
     <div className="border-t border-solid border-[#ffffff33] ">
-      <div className="flex justify-between px-7 py-5 tablet:flex-col tablet:items-center tablet:gap-10">
+      <div className="flex justify-between px-7 py-5 tablet:flex-col tablet:items-center tablet:gap-10 ">
         <div>
           <p className="text-[1.3rem] text-[#32CD32] tablet:text-center">
-            &copy; {year}WORKIFYY. All rights
-            reserved
+            &copy; {year}WORKIFYY. All rights reserved
           </p>
         </div>
 
-        <ul className=" flex gap-16 text-[1.5rem]">
+        <ul className=" flex gap-16 text-[1.5rem]  mobile:gap-10">
           <li>
             <a
               href=""
@@ -39,7 +38,7 @@ const BaseFooter = () => {
 
           <li>
             <a
-             href=""
+              href=""
               target="_blank"
               rel="noreferrer"
               className="text-[2rem] text-[#32CD32]"
@@ -50,7 +49,7 @@ const BaseFooter = () => {
 
           <li>
             <a
-             href=""
+              href=""
               target="_blank"
               rel="noreferrer"
               className="text-[2rem] text-[#32CD32]"
@@ -61,7 +60,7 @@ const BaseFooter = () => {
 
           <li>
             <a
-             href=""
+              href=""
               target="_blank"
               rel="noreferrer"
               className="text-[2rem] text-[#32CD32]"
