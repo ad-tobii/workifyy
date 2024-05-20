@@ -11,7 +11,7 @@
   }
   
   body {
-      @apply bg-gradient-to-tr from-[#2c3e50] to-[#000000]; 
+      @apply bg-gradient-to-tr from-[#000000] to-[#000000]; 
   }
 }
 
