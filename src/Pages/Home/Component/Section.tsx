@@ -4,17 +4,17 @@ import { FaShield } from "react-icons/fa6";
 
 function Section() {
   return (
-    <div className="flex justify-center align-middle self-center content-center gap-20 mt-28">
-      <div>
+    <div className="flex mx-auto justify-center align-middle self-center content-center gap-20 mt-28 laptop:flex-col">
+      <div className="mx-auto">
         <img
           src="/assets/Workifyy-illustration.png"
-          className="w-[30rem] rounded"
+          className="w-[30rem] rounded miniTablet:w-[20rem]"
           alt=""
         />
       </div>
 
-      <div>
-        <h1 className="text-3xl font-bold text-white leading-relaxed content-center self-center text-center pb-3 ">
+      <div className="mx-auto">
+        <h1 className="text-3xl font-bold text-white leading-relaxed content-center self-center text-center pb-3  miniTablet:text-[1.3rem] ">
           Workifyy your work game, it’s easy
         </h1>
         <div className="flex gap-10  text-white pb-8">

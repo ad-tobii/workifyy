@@ -15,18 +15,14 @@
   }
 }
 
-/* .hero__Section-background{
-  @apply bg-[url('/assets/HeroSection.jpg')] bg-center bg-cover bg-no-repeat w-auto h-heroHeight
-} */
+
 .nav__logo{
   @apply font-logoFonts text-primaryColor text-3xl
 }
 .PrimaryBtn{
     @apply bg-primaryColor text-white rounded-sm p-paddingBtn text-sm font-semibold  shadow-sm;
 }
-.hero-section{
-    @apply pt-36 max-w-containerWidth mx-auto 
-}
+
 .bg-client_section{
   @apply bg-[url('/assets/ClientSection.jpg')]  bg-clientSection bg-no-repeat rounded-lg w-auto h-clientSectionHeight
 }
