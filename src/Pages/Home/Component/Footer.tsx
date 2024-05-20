@@ -2,8 +2,8 @@ import BaseFooter from "./BaseFooter";
 function Footer() {
   return (
     <footer className="mt-[12.8rem]">
-      <div className="relative w-full bg-[#000000] py-8 mx-auto">
-        <div className=" flex justify-between px-10 pb-8 laptop: flex-col">
+      <div className="relative w-full bg-[#101215ac] py-8 mx-auto">
+        <div className=" flex justify-between px-10 pb-8 ">
           <div className="nav__logo mt-[12rem]">
             <a href="#" className="">
               <span className="text-[3rem] text-[#32CD32]">WORKIFYY</span>
