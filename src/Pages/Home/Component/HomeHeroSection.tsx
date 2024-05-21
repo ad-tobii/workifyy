@@ -1,6 +1,6 @@
 function HomeHeroSection() {
   return (
-    <div>
+    <div className="container">
       <div className="pt-36 max-w-containerWidth mx-auto  z-50 relative">
         <section className="desktop:ml-6 ">
           <div className="text-white pt-[4rem] miniTablet:pt-[1.2rem]">

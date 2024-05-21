@@ -2,7 +2,7 @@
 
 function ClientSection() {
   return (
-    <div>
+    <div className="container">
       <section className="mx-auto max-w-[150rem] px-8 miniTablet:px-6">
         <div className="mt-[8rem] w-full rounded-[.6rem] bg-[url('/assets/ClientSection.jpg')] bg-cover bg-center bg-no-repeat py-[5rem] miniTablet:bg-center">
           <div>

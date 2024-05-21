@@ -1,7 +1,7 @@
 import BaseFooter from "./BaseFooter";
 function Footer() {
   return (
-    <footer className="mt-[12.8rem]">
+    <footer className="container mt-[12.8rem]">
       <div className="relative w-full bg-[#101215ac] py-8 mx-auto">
         <div className=" flex justify-between px-10 pb-8 ">
           <div className="nav__logo mt-[12rem]">
