@@ -18,12 +18,12 @@ export default function Example() {
   return (
     <div className="mt-[10rem] container">
       <div className="mx-auto  px-3">
-        <div className="flex justify-center self-center content-center">
-          <div>
-            <h1 className="text-[#32CD32] text-[3rem] max-w-[20rem] tracking-widest">
+        {/* <div className="flex justify-center self-center content-center"> */}
+          <div className="text-center">
+            <h1 className="text-[#32CD32] text-[3rem] tracking-wide">
               Three steps to be a workifier
             </h1>
-           <button className="PrimaryBtn">Get Started</button>
+         
           </div>
 
           <div className="mx-auto mt-[3rem] max-w-4xl ">
@@ -54,6 +54,6 @@ export default function Example() {
           </div>
         </div>
       </div>
-    </div>
+    
   );
 }
