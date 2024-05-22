@@ -17,15 +17,17 @@ function Home() {
       </div>
 
       <div>
+        <Section />
+      </div>
+
+      <div>
         <MoreSection />
       </div>
 
       <div>
         <ClientSection />
       </div>
-      <div>
-        <Section />
-      </div>
+
       <div>
         <Footer />
       </div>
