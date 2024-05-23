@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import { FaUser, FaHammer } from "react-icons/fa6";
 function Signup() {
   return (
@@ -28,16 +29,28 @@ function Header() {
   );
 }
 function Choice() {
+  const [selectedRadio, setSelectedRadio] = useState<string | null>(null);
+
+  const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+    setSelectedRadio(event.target.id);
+  };
+
   return (
     <>
       <div className="radiogroup mt-8  flex gap-x-3.5 justify-center">
-        <input type="radio" name="radio-group" className="hidden" id="radio1" />
+        <input
+          type="radio"
+          name="radio-group"
+          className="hidden"
+          id="radio1"
+          onChange={handleRadioChange}
+        />
 
         <label
           className=" myrads border-gray-400 border-solid border-2 pt-4 w-48 h-48 rounded
       text-white flex after:h-7 after:flex after:gap-y-4 after:w-7
       after:border-gray-400 after:border-solid after:border-4 after:rounded-full
-      after:-ml-8 after:-mt-2"
+      after:-ml-8 after:-mt-2 "
           htmlFor="radio1"
         >
           <pre className="mt-6 ml-2 text-lg">
@@ -45,13 +58,19 @@ function Choice() {
             I’m a{"\n"}professional,{"\n"}looking for work.
           </pre>
         </label>
-        <input type="radio" name="radio-group" className="hidden" id="radio2" />
+        <input
+          type="radio"
+          name="radio-group"
+          className="hidden"
+          id="radio2"
+          onChange={handleRadioChange}
+        />
 
         <label
           className=" myrads border-gray-400 border-solid border-2 pt-4 w-48 h-48 rounded
       text-white flex after:h-7 after:flex after:gap-y-4 after:w-7
       after:border-gray-400 after:border-solid after:border-4 after:rounded-full
-      after:ml-2 after:-mt-2"
+      after:ml-2 after:-mt-2 "
           htmlFor="radio2"
         >
           <pre className="mt-6 ml-2 text-lg">
@@ -60,16 +79,25 @@ function Choice() {
           </pre>
         </label>
       </div>
-      <Foot />
+      <Foot selectedRadio={selectedRadio} />
     </>
   );
 }
-
-function Foot() {
+type FootProps = {
+  selectedRadio: string | null;
+}
+function Foot({ selectedRadio }: FootProps) {
   return (
     <>
       <div className="flex justify-center mt-9">
-        <button className=" bg-zinc-300 text-white font-bold py-2 px-4  rounded-3xl opacity-50 cursor-not-allowed">
+        <button
+          className={`bg-zinc-300 text-white font-bold py-2 px-4 rounded-3xl ${
+            selectedRadio
+              ? "cursor-pointer myb"
+              : "opacity-50 cursor-not-allowed"
+          }`}
+          disabled={!selectedRadio}
+        >
           Create Account
         </button>
       </div>
