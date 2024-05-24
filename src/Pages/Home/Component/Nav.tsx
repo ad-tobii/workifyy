@@ -14,10 +14,10 @@ export default function Nav({children} : NavProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[url('/assets/ClientSection.jpg')] bg-center bg-cover bg-no-repeat w-auto h-heroHeight miniTablet:bg-none">
-      <header className="absolute inset-x-0 -top-2 z-50 border-b">
+    <div className="bg-[url('/assets/ClientSection.jpg')] bg-center bg-cover bg-no-repeat w-auto h-[100vh] desktop:h-[90vh] laptop:h-[70vh]">
+      <header className="absolute inset-x-0 -top-2 z-50 border-b ">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center justify-between p-6"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">

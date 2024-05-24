@@ -15,46 +15,46 @@ function Section() {
         </div>
 
         <div className="mx-auto">
-          <h1 className="text-3xl font-bold text-white leading-relaxed content-center self-center text-center pb-3  miniTablet:text-[1.3rem] ">
+          <h1 className="text-3xl font-bold text-white leading-relaxed content-center self-center text-left pb-3 ml-12  miniTablet:text-[1.3rem] ">
             Workifyy your work game, it’s easy
           </h1>
-          <div className="flex gap-10  text-white pb-8">
+          <div className="flex gap-6   text-white pb-8">
             <div>
-              <FaSignInAlt />
+              <FaSignInAlt className="text-[1.8rem] pt-2" />
             </div>
             <ul>
               <h2 className="font-bold text-xl">No cost to join</h2>
-              <li className="font-extralight text-primaryColor">
+              <li className="font-extralight text-[#32CD32] desktop:max-w-[28rem]">
                 Register and browse professionals, explore projects, or even
                 book a consultation.
               </li>
             </ul>
           </div>
 
-          <div className="flex gap-10  text-white pb-8">
+          <div className="flex gap-6  text-white pb-8">
             <div>
-              <FaMapPin />
+              <FaMapPin className="text-[1.8rem] pt-2" />
             </div>
             <ul>
               <h2 className="font-bold text-xl">
                 Post a job and hire top talent
               </h2>
-              <li className="font-extralight text-primaryColor">
+              <li className="font-extralight text-[#32CD32] desktop:max-w-[25rem]">
                 Finding talent doesn’t have to be a chore. Post a job or we can
                 search for you!
               </li>
             </ul>
           </div>
 
-          <div className="flex gap-10  text-white">
+          <div className="flex gap-6  text-white">
             <div>
-              <FaShield />
+              <FaShield className="text-[1.8rem] pt-2" />
             </div>
             <ul>
               <h2 className="font-bold text-xl">
                 Work with the best—without breaking the bank
               </h2>
-              <li className="font-extralight text-primaryColor">
+              <li className="font-extralight text-[#32CD32] desktop:max-w-[28rem]">
                 Workifyy makes it affordable to up your work and take advantage
                 of low transaction rates.
               </li>

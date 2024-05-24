@@ -14,7 +14,7 @@
 //   },
 // ];
 
-export default function Example() {
+export default function MoreSection() {
   return (
     <div className="mt-[10rem] container">
       <div className="mx-auto  px-3">
