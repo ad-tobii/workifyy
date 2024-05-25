@@ -7,17 +7,22 @@ const navigation = [
   { name: "Log In", href: "#" },
   { name: "Explore", href: "#" },
 ];
+
 type NavProps = {
   children: React.ReactNode;
-}
-export default function Nav({children} : NavProps) {
+};
+
+export default function Nav({ children }: NavProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[url('/assets/ClientSection.jpg')] bg-center bg-cover bg-no-repeat w-auto h-heroHeight miniTablet:bg-none">
-      <header className="absolute inset-x-0 -top-2 z-50 border-b">
+    <div className="relative bg-[url('/assets/ClientSection.jpg')] bg-center bg-cover bg-no-repeat w-auto h-[100vh] miniLaptop:h-[120vh] miniMobile:bg-center">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-10 pointer-events-none" />
+
+      <header className="absolute inset-x-0 top-0 z-30 border-b">
         <nav
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center justify-between p-6"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
@@ -28,11 +33,11 @@ export default function Nav({children} : NavProps) {
           <div className="flex lg:hidden">
             <button
               type="button"
-              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+              className="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-white"
               onClick={() => setMobileMenuOpen(true)}
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
           </div>
           <div className="hidden lg:flex lg:gap-x-12 text-white">
@@ -53,33 +58,35 @@ export default function Nav({children} : NavProps) {
           </div>
         </nav>
         <Dialog
-          className="lg:hidden"
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
+          className="fixed inset-0 z-50 bg-white"
         >
-          <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          {/* Dialog Overlay */}
+          <div className="fixed inset-0 bg-black bg-opacity-50" />
+          {/* Dialog Panel */}
+          <Dialog.Panel className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-black px-6 py-6 miniLaptop:max-w-sm miniLaptop:ring-1 miniLaptop:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5 text-white">
                 <span className="nav__logo">WORKIFYY</span>
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-white"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
-                <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                <XMarkIcon className="h-6 w-6 text-white" aria-hidden="true" />
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-gray-500/10">
+              <div className="-my-6 divide-y divide-white">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-900"
                     >
                       {item.name}
                     </a>
@@ -99,7 +106,7 @@ export default function Nav({children} : NavProps) {
         </Dialog>
       </header>
 
-      <div>{children}</div>
+      <div className="relative z-20">{children}</div>
     </div>
   );
 }
