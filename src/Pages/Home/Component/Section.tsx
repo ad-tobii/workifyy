@@ -15,7 +15,7 @@ function Section() {
         </div>
 
         <div className="mx-auto">
-          <h1 className="text-3xl font-bold text-white leading-relaxed content-center self-center text-left pb-3 ml-12 tablet:text-xl">
+          <h1 className="text-3xl font-bold text-white leading-relaxed content-center self-center text-left pb-3 ml-12 tablet:text-xl  miniMobile:pr-3">
             Workifyy your work game, it’s easy
           </h1>
           <div className="flex gap-6   text-white pb-8  miniTablet:gap-4">
