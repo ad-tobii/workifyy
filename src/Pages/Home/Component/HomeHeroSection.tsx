@@ -7,7 +7,7 @@ function HomeHeroSection() {
             <h3 className="text-5xl tracking-wide max-w-[51rem] leading-normal tablet:text-[2rem] tablet:pb-3 miniMobile:text-[1.5rem] xsMobile:text-[1rem]">
               Local Service, Global Standards:
             </h3>
-            <span className="text-primaryColor text-5xl tablet:text-[1.6rem]  miniMobile:text-[1rem] xsMobile:leading-6">
+            <span className="text-[#32CD32] text-5xl tablet:text-[1.6rem]  miniMobile:text-[1rem] xsMobile:leading-6">
               Your Trusted Connection
             </span>
           </div>
@@ -16,7 +16,12 @@ function HomeHeroSection() {
             global standards of excellence and reliability.
           </p>
           <a href="/signup">
-            <button className="PrimaryBtn">GET STARTED</button>
+            <button
+              className="
+  @apply bg-[#32CD32] text-white rounded-sm px-4 py-2 text-sm font-semibold shadow-sm;"
+            >
+              GET STARTED
+            </button>
           </a>
         </section>
       </div>

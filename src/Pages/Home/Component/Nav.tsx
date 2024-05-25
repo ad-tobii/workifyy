@@ -27,7 +27,9 @@ export default function Nav({ children }: NavProps) {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5 text-white">
-              <span className="nav__logo">WORKIFYY</span>
+              <span className="font-logoFonts text-[#32CD32] text-3xl">
+                WORKIFYY
+              </span>
             </a>
           </div>
           <div className="flex lg:hidden">
@@ -52,7 +54,10 @@ export default function Nav({ children }: NavProps) {
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a href="#" className="PrimaryBtn">
+            <a
+              href="#"
+              className="border-2 border-[#32CD32] text-[#32CD32] bg-transparent hover:bg-[#32CD32] hover:text-white font-semibold py-2 px-4 rounded"
+            >
               Join as a Pro <span aria-hidden="true">&rarr;</span>
             </a>
           </div>
@@ -68,7 +73,9 @@ export default function Nav({ children }: NavProps) {
           <Dialog.Panel className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-black px-6 py-6 miniLaptop:max-w-sm miniLaptop:ring-1 miniLaptop:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5 text-white">
-                <span className="nav__logo">WORKIFYY</span>
+                <span className="font-logoFonts text-[#32CD32] text-3xl">
+                  WORKIFYY
+                </span>
               </a>
               <button
                 type="button"

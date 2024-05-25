@@ -64,11 +64,16 @@ function Section() {
           </div>
           <div className="flex gap-3 ml-14 pt-10">
             <div>
-              <button className="PrimaryBtn">Sign In</button>
+              <button className="bg-[#32CD32] text-white rounded-sm px-6 py-3 text-sm font-semibold shadow-sm">
+                Sign In
+              </button>
             </div>
 
             <div>
-              <button className="PrimaryBtn"> Hire A Pro</button>
+              <button className="border-2 border-[#32CD32] text-[#32CD32] bg-transparent hover:bg-[#32CD32] hover:text-white font-semibold py-2 px-4 rounded">
+                {" "}
+                Hire A Pro
+              </button>
             </div>
           </div>
         </div>
