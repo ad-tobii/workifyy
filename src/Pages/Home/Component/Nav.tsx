@@ -7,15 +7,20 @@ const navigation = [
   { name: "Log In", href: "#" },
   { name: "Explore", href: "#" },
 ];
+
 type NavProps = {
   children: React.ReactNode;
-}
-export default function Nav({children} : NavProps) {
+};
+
+export default function Nav({ children }: NavProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="bg-[url('/assets/ClientSection.jpg')] bg-center bg-cover bg-no-repeat w-auto h-[100vh] desktop:h-[90vh] laptop:h-[70vh]">
-      <header className="absolute inset-x-0 -top-2 z-50 border-b ">
+    <div className="relative bg-[url('/assets/ClientSection.jpg')] bg-center bg-cover bg-no-repeat w-auto h-[100vh] miniLaptop:h-[120vh]">
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black bg-opacity-50 z-10 pointer-events-none" />
+
+      <header className="absolute inset-x-0 top-0 z-30 border-b">
         <nav
           className="flex items-center justify-between p-6"
           aria-label="Global"
@@ -53,19 +58,21 @@ export default function Nav({children} : NavProps) {
           </div>
         </nav>
         <Dialog
-          className="lg:hidden"
           open={mobileMenuOpen}
           onClose={setMobileMenuOpen}
+          className="fixed inset-0 z-50"
         >
-          <div className="fixed inset-0 z-50" />
-          <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          {/* Dialog Overlay */}
+          <div className="fixed inset-0 bg-black bg-opacity-50" />
+          {/* Dialog Panel */}
+          <Dialog.Panel className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5 text-white">
+              <a href="#" className="-m-1.5 p-1.5 text-black">
                 <span className="nav__logo">WORKIFYY</span>
               </a>
               <button
                 type="button"
-                className="-m-2.5 rounded-md p-2.5 text-gray-700"
+                className="-m-2.5 rounded-md p-2.5 text-gray-900"
                 onClick={() => setMobileMenuOpen(false)}
               >
                 <span className="sr-only">Close menu</span>
@@ -99,7 +106,7 @@ export default function Nav({children} : NavProps) {
         </Dialog>
       </header>
 
-      <div>{children}</div>
+      <div className="relative z-20">{children}</div>
     </div>
   );
 }

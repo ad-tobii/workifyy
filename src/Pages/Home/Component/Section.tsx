@@ -15,46 +15,48 @@ function Section() {
         </div>
 
         <div className="mx-auto">
-          <h1 className="text-3xl font-bold text-white leading-relaxed content-center self-center text-left pb-3 ml-12  miniTablet:text-[1.3rem] ">
+          <h1 className="text-3xl font-bold text-white leading-relaxed content-center self-center text-left pb-3 ml-12 tablet:text-xl">
             Workifyy your work game, it’s easy
           </h1>
-          <div className="flex gap-6   text-white pb-8">
+          <div className="flex gap-6   text-white pb-8  miniTablet:gap-4">
             <div>
               <FaSignInAlt className="text-[1.8rem] pt-2" />
             </div>
             <ul>
-              <h2 className="font-bold text-xl">No cost to join</h2>
-              <li className="font-extralight text-[#32CD32] desktop:max-w-[28rem]">
+              <h2 className="font-bold text-xl miniTablet:text-lg">
+                No cost to join
+              </h2>
+              <li className="font-extralight text-[#32CD32] desktop:max-w-[28rem] miniTablet:text-sm miniTablet:pr-10">
                 Register and browse professionals, explore projects, or even
                 book a consultation.
               </li>
             </ul>
           </div>
 
-          <div className="flex gap-6  text-white pb-8">
+          <div className="flex gap-6  text-white pb-8 miniTablet:gap-4">
             <div>
               <FaMapPin className="text-[1.8rem] pt-2" />
             </div>
             <ul>
-              <h2 className="font-bold text-xl">
+              <h2 className="font-bold text-xl miniTablet:text-lg">
                 Post a job and hire top talent
               </h2>
-              <li className="font-extralight text-[#32CD32] desktop:max-w-[25rem]">
+              <li className="font-extralight text-[#32CD32] desktop:max-w-[25rem] miniTablet:text-sm miniTablet:pr-10">
                 Finding talent doesn’t have to be a chore. Post a job or we can
                 search for you!
               </li>
             </ul>
           </div>
 
-          <div className="flex gap-6  text-white">
+          <div className="flex gap-6  text-white  miniTablet:gap-4">
             <div>
               <FaShield className="text-[1.8rem] pt-2" />
             </div>
             <ul>
-              <h2 className="font-bold text-xl">
+              <h2 className="font-bold text-xl miniTablet:text-lg">
                 Work with the best—without breaking the bank
               </h2>
-              <li className="font-extralight text-[#32CD32] desktop:max-w-[28rem]">
+              <li className="font-extralight text-[#32CD32] desktop:max-w-[28rem]  miniTablet:text-sm miniTablet:pr-10">
                 Workifyy makes it affordable to up your work and take advantage
                 of low transaction rates.
               </li>
