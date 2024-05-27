@@ -106,7 +106,7 @@ type FootProps = {
 function Foot({ selectedRadio }: FootProps) {
   return (
     <>
-      <div className="flex justify-center mt-12 ">
+      <div className="flex justify-center mt-8 ">
         <button
           className={`bg-zinc-300 text-white font-bold py-2 px-4 rounded-3xl ${
             selectedRadio
