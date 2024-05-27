@@ -3,9 +3,9 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Sign Up", href: "#" },
+  { name: "Sign Up", href: "signup" },
   { name: "Log In", href: "#" },
-  { name: "Explore", href: "#" },
+  { name: "Explore", href: "signup" },
 ];
 type NavProps = {
   children: React.ReactNode;
@@ -35,12 +35,12 @@ export default function Nav({children} : NavProps) {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12 text-white">
+          <div className="hidden lg:flex lg:gap-x-12 text-white ">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-xl font-semibold leading-6 text-white"
+                className="text-xl font-semibold leading-6 text-white cursor-pointer"
               >
                 {item.name}
               </a>

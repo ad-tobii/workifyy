@@ -1,5 +1,3 @@
-
-
 function ClientSection() {
   return (
     <div className="container">
@@ -13,7 +11,8 @@ function ClientSection() {
               Find Technicians Your Way
             </h2>
             <p className="max-w-[30rem] text-white leading-relaxed tracking-widest pl-5 text-[1.2rem]">
-              Work with the largest network of independent professionals and get things done—from quick turnarounds to big transformations.
+              Work with the largest network of independent professionals and get
+              things done—from quick turnarounds to big transformations.
             </p>
             <section className="flex gap-12 pl-5 pt-12 laptop:flex-col miniTablet:pl-3">
               <div className="w-72 h-32 rounded-md bg-[#32CD32] hover:bg-white hover:text-green-500 cursor-pointer laptop:w-[22rem]">

@@ -14,8 +14,9 @@ function HomeHeroSection() {
             global standards of excellence and reliability.
           </p>
 
-            
-          <button className="PrimaryBtn">GET STARTED</button>
+          <a href="/signup">
+            <button className="PrimaryBtn">GET STARTED</button>
+          </a>
         </section>
       </div>
     </div>
