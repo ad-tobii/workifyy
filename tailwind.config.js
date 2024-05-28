@@ -14,34 +14,6 @@ export default {
         laptop: { max: "56.25em" }, // min: 601px, max: 900px
         desktop: { max: "75em" }, // min: 901px, max: 1200px
       },
-      colors: {
-        primaryColor: "#32CD32",
-      },
-      maxWidth: {
-        containerWidth: "1250px",
-        textWidth: "55rem",
-        paragraphText: "35rem",
-      },
-      padding: {
-        paddingBtn: "0.65rem 1rem",
-      },
-
-      backgroundImage: {
-        heropattern: "url('/assests/HeroSection.jpg')",
-      },
-      backgroundSize: {
-        clientSection: "75rem",
-      },
-
-      width: {
-        logoWidth: "8rem",
-        heroWidth: "40rem",
-      },
-      height: {
-        heroHeight: "100vh",
-        clientSectionHeight: "60vh",
-        overlayHeight: "100vh",
-      },
       fontFamily: {
         logoFonts: "Rubik Maps, system-ui;",
       },

@@ -4,12 +4,11 @@ import Section from "./Component/Section";
 import ClientSection from "./Component/ClientSection";
 
 import MoreSection from "./Component/MoreSection";
-import Footer from "./Component/Footer"
+import Footer from "./Component/Footer";
 
 function Home() {
   return (
     <div>
-     
       <div>
         <Nav>
           <HomeHeroSection />
