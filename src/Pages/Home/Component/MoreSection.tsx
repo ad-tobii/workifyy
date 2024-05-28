@@ -34,10 +34,10 @@ export default function MoreSection() {
   ];
 
   return (
-    <div className="mt-[10rem] container">
+    <div className="container mt-[10rem]">
       <div className="mx-auto">
         <div className="text-center">
-          <h1 className="text-[#32CD32] text-[3rem] tracking-wide laptop:text-[2rem]">
+          <h1 className="text-[3rem] tracking-wide text-[#32CD32] laptop:text-[2rem]">
             Three steps to be a workifier
           </h1>
         </div>
@@ -56,18 +56,18 @@ export default function MoreSection() {
                   <img
                     src={step.imgSrc}
                     alt=""
-                    className="mx-auto w-[8rem] h-[8rem]"
+                    className="mx-auto h-[8rem] w-[8rem]"
                   />
-                  <p className="text-white pt-3">{step.text}</p>
+                  <p className="pt-3 text-white">{step.text}</p>
                 </div>
               ))}
             </Carousel>
           ) : (
-            <div className="flex justify-center self-center gap-[10rem] laptop:gap-[6rem]">
+            <div className="flex justify-center gap-[10rem] self-center laptop:gap-[6rem]">
               {steps.map((step, index) => (
-                <div key={index} className="mx-auto">
+                <div key={index} className="p- mx-auto">
                   <img src={step.imgSrc} alt="" className="tablet:w-[6.5rem]" />
-                  <p className="text-white pt-3">{step.text}</p>
+                  <p className="pt-3 text-white">{step.text}</p>
                 </div>
               ))}
             </div>

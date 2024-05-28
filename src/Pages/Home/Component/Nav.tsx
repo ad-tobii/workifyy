@@ -16,9 +16,9 @@ export default function Nav({ children }: NavProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative bg-[url('/assets/ClientSection.jpg')] bg-center bg-cover bg-no-repeat w-auto h-[100vh] miniLaptop:h-[120vh] miniMobile:bg-center">
+    <div className="relative h-[100vh] w-auto bg-[url('/assets/ClientSection.jpg')] bg-cover bg-center bg-no-repeat miniMobile:bg-center miniLaptop:h-[120vh]">
       {/* Overlay */}
-      <div className="absolute inset-0 bg-black bg-opacity-50 z-10 pointer-events-none" />
+      <div className="pointer-events-none absolute inset-0 z-10 bg-black bg-opacity-50" />
 
       <header className="absolute inset-x-0 top-0 z-30 border-b">
         <nav
@@ -27,7 +27,7 @@ export default function Nav({ children }: NavProps) {
         >
           <div className="flex lg:flex-1">
             <a href="#" className="-m-1.5 p-1.5 text-white">
-              <span className="font-logoFonts text-[#32CD32] text-3xl">
+              <span className="font-logoFonts text-3xl text-[#32CD32]">
                 WORKIFYY
               </span>
             </a>
@@ -42,24 +42,16 @@ export default function Nav({ children }: NavProps) {
               <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden lg:flex lg:gap-x-12 text-white">
+          <div className="hidden text-white lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a
                 key={item.name}
                 href={item.href}
-                className="text-xl font-semibold leading-6 text-white"
+                className=" relative text-xl font-semibold leading-6 text-white duration-500 ease-in-out after:absolute after:bottom-[-2rem] after:left-0 after:h-[3px] after:w-0 after:bg-[#32cd32] after:transition-all after:duration-300 hover:text-[#32cd32] hover:transition-all  hover:after:w-full"
               >
                 {item.name}
               </a>
             ))}
-          </div>
-          <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <a
-              href="#"
-              className="border-2 border-[#32CD32] text-[#32CD32] bg-transparent hover:bg-[#32CD32] hover:text-white font-semibold py-2 px-4 rounded"
-            >
-              Join as a Pro <span aria-hidden="true">&rarr;</span>
-            </a>
           </div>
         </nav>
         <Dialog
@@ -73,7 +65,7 @@ export default function Nav({ children }: NavProps) {
           <Dialog.Panel className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-black px-6 py-6 miniLaptop:max-w-sm miniLaptop:ring-1 miniLaptop:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5 text-white">
-                <span className="font-logoFonts text-[#32CD32] text-3xl">
+                <span className="font-logoFonts text-3xl text-[#32CD32]">
                   WORKIFYY
                 </span>
               </a>

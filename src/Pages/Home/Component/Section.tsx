@@ -5,7 +5,7 @@ import { FaShield } from "react-icons/fa6";
 function Section() {
   return (
     <div className="container">
-      <div className="flex mx-auto justify-center align-middle self-center content-center gap-20 mt-28 laptop:flex-col">
+      <div className="mx-auto mt-28 flex content-center justify-center gap-20 self-center align-middle laptop:flex-col">
         <div className="mx-auto">
           <img
             src="/assets/Workifyy-illustration.png"
@@ -15,33 +15,33 @@ function Section() {
         </div>
 
         <div className="mx-auto">
-          <h1 className="text-3xl font-bold text-white leading-relaxed content-center self-center text-left pb-3 ml-12 tablet:text-xl  miniMobile:pr-3">
+          <h1 className="ml-12 content-center self-center pb-3 text-left text-3xl font-bold leading-relaxed text-white miniMobile:pr-3  tablet:text-xl">
             Workifyy your work game, it’s easy
           </h1>
-          <div className="flex gap-6   text-white pb-8  miniTablet:gap-4">
+          <div className="flex gap-6   pb-8 text-white  miniTablet:gap-4">
             <div>
-              <FaSignInAlt className="text-[1.8rem] pt-2" />
+              <FaSignInAlt className="pt-2 text-[1.8rem]" />
             </div>
             <ul>
-              <h2 className="font-bold text-xl miniTablet:text-lg">
+              <h2 className="text-xl font-bold miniTablet:text-lg">
                 No cost to join
               </h2>
-              <li className="font-extralight text-[#32CD32] desktop:max-w-[28rem] miniTablet:text-sm miniTablet:pr-10">
+              <li className="font-extralight text-[#32CD32] miniTablet:pr-10 miniTablet:text-sm desktop:max-w-[28rem]">
                 Register and browse professionals, explore projects, or even
                 book a consultation.
               </li>
             </ul>
           </div>
 
-          <div className="flex gap-6  text-white pb-8 miniTablet:gap-4">
+          <div className="flex gap-6  pb-8 text-white miniTablet:gap-4">
             <div>
-              <FaMapPin className="text-[1.8rem] pt-2" />
+              <FaMapPin className="pt-2 text-[1.8rem]" />
             </div>
             <ul>
-              <h2 className="font-bold text-xl miniTablet:text-lg">
+              <h2 className="text-xl font-bold miniTablet:text-lg">
                 Post a job and hire top talent
               </h2>
-              <li className="font-extralight text-[#32CD32] desktop:max-w-[25rem] miniTablet:text-sm miniTablet:pr-10">
+              <li className="font-extralight text-[#32CD32] miniTablet:pr-10 miniTablet:text-sm desktop:max-w-[25rem]">
                 Finding talent doesn’t have to be a chore. Post a job or we can
                 search for you!
               </li>
@@ -50,27 +50,27 @@ function Section() {
 
           <div className="flex gap-6  text-white  miniTablet:gap-4">
             <div>
-              <FaShield className="text-[1.8rem] pt-2" />
+              <FaShield className="pt-2 text-[1.8rem]" />
             </div>
             <ul>
-              <h2 className="font-bold text-xl miniTablet:text-lg">
+              <h2 className="text-xl font-bold miniTablet:text-lg">
                 Work with the best—without breaking the bank
               </h2>
-              <li className="font-extralight text-[#32CD32] desktop:max-w-[28rem]  miniTablet:text-sm miniTablet:pr-10">
+              <li className="font-extralight text-[#32CD32] miniTablet:pr-10  miniTablet:text-sm desktop:max-w-[28rem]">
                 Workifyy makes it affordable to up your work and take advantage
                 of low transaction rates.
               </li>
             </ul>
           </div>
-          <div className="flex gap-3 ml-14 pt-10">
+          <div className="ml-14 flex gap-3 pt-10">
             <div>
-              <button className="bg-[#32CD32] text-white rounded-sm px-6 py-3 text-sm font-semibold shadow-sm">
+              <button className=" rounded-sm border-2 border-[#32CD32] bg-[#32CD32] px-6 py-3 text-sm font-semibold text-white shadow-sm duration-500 ease-in-out  hover:bg-transparent hover:text-white hover:transition-all">
                 Sign In
               </button>
             </div>
 
             <div>
-              <button className="border-2 border-[#32CD32] text-[#32CD32] bg-transparent hover:bg-[#32CD32] hover:text-white font-semibold py-2 px-4 rounded">
+              <button className="rounded border-2 border-[#32CD32] bg-transparent px-4 py-2.5 font-semibold text-[#32CD32] duration-500 ease-in-out hover:bg-[#32CD32] hover:text-white hover:transition-all">
                 {" "}
                 Hire A Pro
               </button>

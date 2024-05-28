@@ -15,7 +15,7 @@
 }
 
 .container {
-  @apply max-w-[1250px] mx-auto;
+  @apply mx-auto max-w-[1250px];
 }
 
 label:after {

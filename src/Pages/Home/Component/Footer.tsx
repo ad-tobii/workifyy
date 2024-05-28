@@ -5,17 +5,17 @@ import BaseFooter from "./BaseFooter";
 function Footer() {
   return (
     <footer className="container mt-[12.8rem]">
-      <div className="relative w-full bg-[#454a52ac] py-8 mx-auto">
+      <div className="relative mx-auto w-full bg-[#454a52ac] py-8">
         <div className=" flex justify-between px-10 pb-8  miniLaptop:flex-col">
           <div className="mt-[6rem]">
             <a href="#" className="">
-              <span className="text-[3rem] text-[#32CD32] nav__logo laptop:text-[1.5rem]">
+              <span className="nav__logo text-[3rem] text-[#32CD32] laptop:text-[1.5rem]">
                 WORKIFYY
               </span>
             </a>
 
             <section className="flex gap-2 py-[2rem]">
-              <main className="w-[3rem] h-[3rem] rounded-full border flex items-center justify-center">
+              <main className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full border">
                 <FaMessage className="text-center text-[1.3rem] text-[#32CD32]" />
               </main>
 
@@ -33,7 +33,7 @@ function Footer() {
             </section>
 
             <section className="flex gap-2">
-              <main className="w-[3rem] h-[3rem] rounded-full border flex items-center justify-center">
+              <main className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full border">
                 <FaPhoneAlt className="text-center text-[1.3rem] text-[#32CD32]" />
               </main>
 

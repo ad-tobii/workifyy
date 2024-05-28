@@ -1,12 +1,12 @@
 export function SignupBtns() {
   return (
     <>
-      <div className="flex justify-center mt-9">
-        <button className=" bg-zinc-300 text-white font-bold py-2 px-4  rounded-3xl opacity-50 cursor-not-allowed">
+      <div className="mt-9 flex justify-center">
+        <button className=" cursor-not-allowed rounded-3xl bg-zinc-300 px-4 py-2  font-bold text-white opacity-50">
           Create Account
         </button>
       </div>
-      <p className="text-white text-center mt-3">
+      <p className="mt-3 text-center text-white">
         Already have an account?{" "}
         <a href="#" className="mylink">
           Log In

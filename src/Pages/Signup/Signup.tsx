@@ -8,7 +8,7 @@ function Signup() {
       <Logo />
       <Header />
       <SignupOptions />
-      <SignupBtns/>
+      <SignupBtns />
     </div>
   );
 }
