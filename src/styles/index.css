@@ -1,56 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    font-family: "poppins", sans-serif;
-    
+    font-family: "Poppins", sans-serif;
   }
-  
+
   body {
-      @apply bg-gradient-to-tr from-[#000000] to-[#000000]; 
+    @apply bg-[#000000];
   }
 }
 
-.container{
-  @apply max-w-[1250px] mx-auto
+.container {
+  @apply mx-auto max-w-[1250px];
 }
 
-
-
-.nav__logo{
-  @apply font-logoFonts text-primaryColor text-3xl
-}
-.PrimaryBtn{
-    @apply bg-primaryColor text-white rounded-sm p-paddingBtn text-sm font-semibold  shadow-sm;
+label:after {
+  content: "";
 }
 
-.bg-client_section{
-  @apply bg-[url('/assets/ClientSection.jpg')]  bg-clientSection bg-no-repeat rounded-lg w-auto h-clientSectionHeight
-}
-label:after{
-  content:"";
-}
-input[type="radio"]:checked + label{
-  background-color:#000000;
+input[type="radio"]:checked + label {
+  background-color: #000000;
   color: #ffffff;
-  border-color:#32cd32;
+  border-color: #32cd32;
 }
-input[type="radio"]:checked + label:after{
-  height:28px;
-  width:28px;
-  border:5px solid #32cd32;
-  background-color:black;
+
+input[type="radio"]:checked + label:after {
+  height: 28px;
+  width: 28px;
+  border: 5px solid #32cd32;
+  background-color: black;
+  transform: translate(180deg);
 }
-.mylink{
-  color:#32cd32;
-  text-decoration:underline;
+
+.mylink {
+  color: #32cd32;
+  text-decoration: underline;
 }
-.myb{
-  color:white;
-  background-color:#32cd32;
+
+.peer-checked:scale-110 {
+  transform: scale(1.1);
+}
+
+.myb {
+  color: white;
+  background-color: #32cd32;
 }

@@ -1,22 +1,39 @@
 function HomeHeroSection() {
   return (
     <div className="container">
-      <div className="pt-36 max-w-containerWidth mx-auto  z-50 relative">
-        <section className="desktop:ml-6 ">
-          <div className="text-white pt-[4rem] miniTablet:pt-[1.2rem]">
-            <h3 className="text-5xl tracking-widest max-w-[55rem] leading-relaxed miniTablet:text-[2rem]">
-              Local Service, Global Standards:{" "}
-              <span className="text-primaryColor">Your Trusted Connection</span>
+      <div className="relative z-50 mx-auto pt-36 miniTablet:pt-28">
+        <section className="desktop:ml-6">
+          <div className="pt-[4rem] text-white">
+            <h3 className="max-w-[51rem] text-5xl leading-normal tracking-wide xsMobile:text-[1rem] miniMobile:text-[1.5rem] tablet:pb-3 tablet:text-[2rem]">
+              Local Service, Global Standards:
             </h3>
+            <span className="text-5xl text-[#32CD32] xsMobile:leading-6 miniMobile:text-[1rem] tablet:text-[1.6rem]">
+              Your Trusted Connection
+            </span>
           </div>
-          <p className="text-white text-xl max-w-[35rem] pb-3 leading-loose tracking-wide miniMobile:[20rem]">
+          <p className="max-w-[35rem] pb-3 text-xl leading-loose tracking-wide text-white miniMobile:text-[1rem] tablet:pr-12 tablet:pt-3">
             Discover the pinnacle of local service, meticulously crafted to meet
             global standards of excellence and reliability.
           </p>
 
-          <a href="/signup">
-            <button className="PrimaryBtn">GET STARTED</button>
-          </a>
+          <div className="flex content-center items-center gap-[1rem] self-center">
+            <div>
+              <a href="/signup">
+                <button className="rounded border-2 border-[#32CD32] bg-[#32CD32] px-4 py-2 font-semibold text-white duration-500 ease-in-out hover:bg-transparent hover:text-white hover:transition-all">
+                  GET STARTED
+                </button>
+              </a>
+            </div>
+
+            <div>
+              <a
+                href="#"
+                className="rounded border-2 border-[#32CD32] bg-transparent px-4 py-2 font-semibold text-[#32CD32] duration-500 ease-in-out hover:bg-[#32CD32] hover:text-white hover:transition-all"
+              >
+                Join as a Pro <span aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+          </div>
         </section>
       </div>
     </div>
