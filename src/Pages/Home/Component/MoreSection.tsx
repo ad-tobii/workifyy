@@ -1,59 +1,79 @@
-// const features = [
-//   {
-//     image: "/assets/Character1.svg",
-//     description: "Apply to Workifyy",
-//   },
-//   {
-//     image: "/assets/Character3.svg",
-//     description: "Get Verified",
-//   },
-//   {
-//     image: "/assets/Character2.svg",
+import { useState, useEffect } from "react";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-//     description: "Start Working",
-//   },
-// ];
+export default function MoreSection() {
+  const [isMobile, setIsMobile] = useState(false);
 
-export default function Example() {
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    handleResize();
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  const steps = [
+    {
+      imgSrc: "/assets/Character1.svg",
+      text: "Apply to Workifyy",
+    },
+    {
+      imgSrc: "/assets/Character3.svg",
+      text: "Get Verified",
+    },
+    {
+      imgSrc: "/assets/Character2.svg",
+      text: "Start Working",
+    },
+  ];
+
   return (
-    <div className="mt-[10rem] container">
-      <div className="mx-auto  px-3">
-        {/* <div className="flex justify-center self-center content-center"> */}
-          <div className="text-center">
-            <h1 className="text-[#32CD32] text-[3rem] tracking-wide">
-              Three steps to be a workifier
-            </h1>
-         
-          </div>
+    <div className="container mt-[10rem]">
+      <div className="mx-auto">
+        <div className="text-center">
+          <h1 className="text-[3rem] tracking-wide text-[#32CD32] laptop:text-[2rem]">
+            Three steps to be a workifier
+          </h1>
+        </div>
 
-          <div className="mx-auto mt-[3rem] max-w-4xl ">
-            <div className="flex justify-center self-center gap-[10rem]">
-              <div>
-                <img src="/assets/Character1.svg" alt="" />
-                <p className="text-white pt-3">Apply to Workifyy</p>
-              </div>
-
-              <div className="pt-[1.4rem]">
-                <img src="/assets/Character3.svg" alt="" />
-                <p className="text-white  pt-3">Get Verified</p>
-              </div>
-
-              <div className="pt-[1.4rem]">
-                <img src="/assets/Character2.svg" alt="" />
-                <p className="text-white  pt-3">Start Working</p>
-              </div>
-              {/* {features.map((feature) => (
-              <div key={feature.image}>
-                <img src= {feature.image} className="" />
-                
-  
-                <dd className="mt-2 text-base leading-7 text-white">
-                  {feature.description}
-                </dd> */}
+        <div className="mx-auto mt-[3rem] max-w-4xl">
+          {isMobile ? (
+            <Carousel
+              showThumbs={false}
+              infiniteLoop={true}
+              autoPlay={true}
+              showStatus={false}
+              showIndicators={false}
+            >
+              {steps.map((step, index) => (
+                <div key={index} className="text-center">
+                  <img
+                    src={step.imgSrc}
+                    alt=""
+                    className="mx-auto h-[8rem] w-[8rem]"
+                  />
+                  <p className="pt-3 text-white">{step.text}</p>
+                </div>
+              ))}
+            </Carousel>
+          ) : (
+            <div className="flex justify-center gap-[10rem] self-center laptop:gap-[6rem]">
+              {steps.map((step, index) => (
+                <div key={index} className="p- mx-auto">
+                  <img src={step.imgSrc} alt="" className="tablet:w-[6.5rem]" />
+                  <p className="pt-3 text-white">{step.text}</p>
+                </div>
+              ))}
             </div>
-          </div>
+          )}
         </div>
       </div>
-    
+    </div>
   );
 }

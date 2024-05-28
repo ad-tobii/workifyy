@@ -5,32 +5,26 @@ import BaseFooter from "./BaseFooter";
 function Footer() {
   return (
     <footer className="container mt-[12.8rem]">
-      <div className="relative w-full bg-[#454a52ac] py-8 mx-auto">
-        <div className=" flex justify-between px-10 pb-8 ">
+      <div className="relative mx-auto w-full bg-[#454a52ac] py-8">
+        <div className=" flex justify-between px-10 pb-8  miniLaptop:flex-col">
           <div className="mt-[6rem]">
             <a href="#" className="">
-              <span className="text-[3rem] text-[#32CD32] nav__logo  ">
+              <span className="nav__logo text-[3rem] text-[#32CD32] laptop:text-[1.5rem]">
                 WORKIFYY
               </span>
             </a>
-            {/* <div>
-              <p className="text-white max-w-[20rem] py-[1rem] ">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Adipisci sequi magni recusandae cupiditate dicta vitae.
-              </p>
-            </div> */}
 
             <section className="flex gap-2 py-[2rem]">
-              <main className="w-[3rem] h-[3rem] rounded-full border flex items-center justify-center">
+              <main className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full border">
                 <FaMessage className="text-center text-[1.3rem] text-[#32CD32]" />
               </main>
 
               <div>
-                <h3 className="text-[#32CD32]">Email</h3>
+                <h3 className="text-[#32CD32] laptop:text-[1rem]">Email</h3>
                 <p>
                   <a
                     href="mailto:Workifyy@gmail.com"
-                    className="text-[#32CD32]"
+                    className="text-[#32CD32] laptop:text-[1rem]"
                   >
                     Workifyy@gmail.com
                   </a>
@@ -39,14 +33,19 @@ function Footer() {
             </section>
 
             <section className="flex gap-2">
-              <main className="w-[3rem] h-[3rem] rounded-full border flex items-center justify-center">
+              <main className="flex h-[3rem] w-[3rem] items-center justify-center rounded-full border">
                 <FaPhoneAlt className="text-center text-[1.3rem] text-[#32CD32]" />
               </main>
 
               <div>
-                <h3 className="text-[#32CD32]">Contact Us</h3>
+                <h3 className="text-[#32CD32] laptop:text-[1rem]">
+                  Contact Us
+                </h3>
                 <p>
-                  <a href="tel:+2349081715621" className="text-[#32CD32]">
+                  <a
+                    href="tel:+2349081715621"
+                    className="text-[#32CD32] laptop:text-[1rem]"
+                  >
                     +2349081715621
                   </a>
                 </p>
@@ -55,22 +54,31 @@ function Footer() {
           </div>
 
           <div>
-            <h6 className="pb-10 pt-24 text-[1.5rem] uppercase text-white tablet:pt-12">
+            <h6 className="pb-10 pt-24 text-[1.5rem] uppercase text-white laptop:text-[1.2rem]">
               Company
             </h6>
             <ul className="flex flex-col gap-4">
               <li>
-                <a href="#" className="text-[1.3rem] text-[#32CD32]">
+                <a
+                  href="#"
+                  className="text-[1.3rem] text-[#32CD32] laptop:text-[1.1rem]"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[1.3rem] text-[#32CD32]">
+                <a
+                  href="#"
+                  className="text-[1.3rem] text-[#32CD32] laptop:text-[1.1rem]"
+                >
                   Our Team
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[1.3rem] text-[#32CD32]">
+                <a
+                  href="#"
+                  className="text-[1.3rem] text-[#32CD32] laptop:text-[1.1rem]"
+                >
                   Community
                 </a>
               </li>
@@ -78,25 +86,34 @@ function Footer() {
           </div>
 
           <div>
-            <h6 className="pb-10 pt-24 text-[1.5rem] uppercase text-white tablet:pt-12">
+            <h6 className="pb-10 pt-24 text-[1.5rem] uppercase text-white laptop:text-[1.2rem]">
               Support
             </h6>
 
             <ul className="flex flex-col gap-4">
               <li>
-                <a href="#" className="text-[1.3rem] text-[#32CD32]">
+                <a
+                  href="#"
+                  className="text-[1.3rem] text-[#32CD32] laptop:text-[1.1rem]"
+                >
                   FAQ
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-[1.3rem] text-[#32CD32]">
+                <a
+                  href="#"
+                  className="text-[1.3rem] text-[#32CD32] laptop:text-[1.1rem]"
+                >
                   Contact Us
                 </a>
               </li>
 
               <li>
-                <a href="#" className="text-[1.3rem] text-[#32CD32]">
+                <a
+                  href="#"
+                  className="text-[1.3rem] text-[#32CD32] laptop:text-[1.1rem]"
+                >
                   Online Chat
                 </a>
               </li>
@@ -104,22 +121,31 @@ function Footer() {
           </div>
 
           <div>
-            <h6 className="pb-10 pt-24 text-[1.5rem] uppercase text-white tablet:pt-12">
+            <h6 className="pb-10 pt-24 text-[1.5rem] uppercase text-white laptop:text-[1.2rem]">
               Legals
             </h6>
             <ul className="flex flex-col gap-4">
               <li>
-                <a href="#" className="text-[1.3rem] text-[#32CD32]">
+                <a
+                  href="#"
+                  className="text-[1.3rem] text-[#32CD32] laptop:text-[1.1rem]"
+                >
                   Privacy
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[1.3rem] text-[#32CD32]">
+                <a
+                  href="#"
+                  className="text-[1.3rem] text-[#32CD32] laptop:text-[1.1rem]"
+                >
                   Terms of Use
                 </a>
               </li>
               <li>
-                <a href="#" className="text-[1.3rem] text-[#32CD32]">
+                <a
+                  href="#"
+                  className="text-[1.3rem] text-[#32CD32] laptop:text-[1.1rem]"
+                >
                   Terms & Condition
                 </a>
               </li>
