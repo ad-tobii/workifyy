@@ -28,13 +28,10 @@ input[type="radio"]:checked + label {
   color: #ffffff;
   border-color: #32cd32;
 }
-
-input[type="radio"]:checked + label:after {
-  height: 28px;
-  width: 28px;
-  border: 5px solid #32cd32;
-  background-color: black;
-  transform: translate(180deg);
+input[type="radio"]:checked + label:after{
+ 
+  border:5px solid #32cd32;
+  background-color:black;
 }
 
 .mylink {
