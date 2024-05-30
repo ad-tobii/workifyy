@@ -1,5 +1,6 @@
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
+import "../../styles/Signin.css";
 
 type FormValues = {
   email: string;
