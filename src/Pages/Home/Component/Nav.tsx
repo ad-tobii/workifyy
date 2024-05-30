@@ -3,9 +3,9 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
-  { name: "Sign Up", href: "signup" },
+  { name: "Sign Up", href: "/signup3" },
   { name: "Log In", href: "#" },
-  { name: "Explore", href: "signup" },
+  { name: "Explore", href: "" },
 ];
 
 type NavProps = {
