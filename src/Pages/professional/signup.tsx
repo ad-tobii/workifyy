@@ -1,5 +1,6 @@
 import { FieldErrors, useForm } from "react-hook-form";
 import { useEffect } from "react";
+import "../../styles/Signup.css";
 
 type FormValues = {
   firstname: string;
