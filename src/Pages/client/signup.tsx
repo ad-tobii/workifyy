@@ -40,78 +40,108 @@ export const Signup = () => {
       reset();
     }
   }, [isSubmitSuccessful, reset]);
-
   return (
-    <div>
-      <nav className="navbar">
-        <div className="logo">
-          <p>Workifyy</p>
+    <div className="flex min-h-screen flex-col  bg-black p-4 text-white">
+      <nav className=" flex w-full items-center justify-between bg-black p-4 ">
+        <div className="font-logoFonts text-[#32cd32]">
+          <p className="text-4xl mobile:-ml-4 mobile:text-[2.2rem] ">
+            Workifyy
+          </p>
         </div>
-        <ul className="nav-links">
+        <ul className="flex space-x-4 ">
           <li>
-            <p>Looking for work?</p>
+            <p className="text-lg mobile:hidden miniTablet:hidden">
+              Here to hire talent?
+            </p>
           </li>
           <li>
-            <p>
-              <a href="#" className="client-btn">
-                Apply as talent
+            <p className="miniMobile:hidden">
+              <a
+                href="#"
+                className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-600 miniMobile:px-1"
+              >
+                Join as a client
               </a>
             </p>
+            <button className="hidden w-32 rounded bg-[#32cd32] py-3 text-white   hover:bg-green-600 miniMobile:inline">
+              Join as a client
+            </button>
           </li>
         </ul>
       </nav>
-      <div className="form-container">
-        <div className="form-wrapper">
-          <h1 className="form-title">Sign up to hire talent</h1>
-          <div className="btn-wrapper">
-            <button type="button" className="apple-btn">
+      <div className="mt-8 flex flex-col items-center">
+        <div className=" w-full max-w-[40rem] rounded-lg bg-zinc-800 p-6">
+          <div className=" ">
+            <h1 className="mb-4 text-2xl font-bold">
+              Sign up to find work you love
+            </h1>
+          </div>
+          <div className="mb-4 flex flex-col space-y-2">
+            <button
+              type="button"
+              className="rounded bg-black px-4 py-2 text-white hover:bg-gray-700"
+            >
               Continue with Apple
             </button>
-            <button type="button" className="google-btn">
+            <button
+              type="button"
+              className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-500"
+            >
               Continue with Google
             </button>
           </div>
-          <div className="or-divider">
-            <hr />
-            <span>or</span>
-            <hr />
+          <div className="mb-4 flex items-center">
+            <hr className="flex-grow border-gray-600" />
+            <span className="mx-2 text-gray-400">or</span>
+            <hr className="flex-grow border-gray-600" />
           </div>
           <form onSubmit={handleSubmit(onSubmit, onError)} noValidate>
-            <div className="form-row">
-              <div className="form-group">
-                <label htmlFor="firstname">First Name</label>
+            <div className="mb-4 flex space-x-4">
+              <div className="flex w-1/2 flex-col">
+                <label htmlFor="firstname" className="mb-1">
+                  First Name
+                </label>
                 <input
                   type="text"
                   id="firstname"
+                  className="rounded border border-gray-600 bg-white p-2 text-black focus:outline-none focus:outline-[#32cd32]"
                   placeholder="First Name"
                   {...register("firstname", {
                     required: "First Name is required",
                   })}
                   aria-invalid={errors.firstname ? "true" : "false"}
-                  aria-live="assertive"
                 />
-                <p className="error">{errors.firstname?.message}</p>
+                <p className="mt-1 text-sm text-red-500">
+                  {errors.firstname?.message}
+                </p>
               </div>
-              <div className="form-group">
-                <label htmlFor="lastname">Last Name</label>
+              <div className="flex w-1/2 flex-col">
+                <label htmlFor="lastname" className="mb-1">
+                  Last Name
+                </label>
                 <input
                   type="text"
                   id="lastname"
+                  className="rounded border border-gray-600 bg-white p-2 text-black focus:outline-none focus:outline-[#32cd32]"
                   placeholder="Last Name"
                   {...register("lastname", {
                     required: "Last Name is required",
                   })}
                   aria-invalid={errors.lastname ? "true" : "false"}
-                  aria-live="assertive"
                 />
-                <p className="error">{errors.lastname?.message}</p>
+                <p className="mt-1 text-sm text-red-500">
+                  {errors.lastname?.message}
+                </p>
               </div>
             </div>
-            <div className="form-group">
-              <label htmlFor="email">Email Address</label>
+            <div className="mb-4 flex flex-col">
+              <label htmlFor="email" className="mb-1">
+                Email Address
+              </label>
               <input
                 type="email"
                 id="email"
+                className="rounded border border-gray-600 bg-white p-2 text-black focus:outline-none focus:outline-[#32cd32]"
                 placeholder="Email"
                 {...register("email", {
                   required: "Email is required",
@@ -122,15 +152,19 @@ export const Signup = () => {
                   },
                 })}
                 aria-invalid={errors.email ? "true" : "false"}
-                aria-live="assertive"
               />
-              <p className="error">{errors.email?.message}</p>
+              <p className="mt-1 text-sm text-red-500">
+                {errors.email?.message}
+              </p>
             </div>
-            <div className="form-group">
-              <label htmlFor="password">Password</label>
+            <div className="mb-4 flex flex-col">
+              <label htmlFor="password" className="mb-1">
+                Password
+              </label>
               <input
                 type="password"
                 id="password"
+                className="rounded border border-gray-600 bg-white p-2 text-black focus:outline-none focus:outline-[#32cd32]"
                 placeholder="Password"
                 {...register("password", {
                   required: "Password is required",
@@ -146,22 +180,26 @@ export const Signup = () => {
                   },
                 })}
                 aria-invalid={errors.password ? "true" : "false"}
-                aria-live="assertive"
               />
-              <p className="error">{errors.password?.message}</p>
+              <p className="mt-1 text-sm text-red-500">
+                {errors.password?.message}
+              </p>
             </div>
-            <div className="form-group">
-              <label htmlFor="nin">NIN</label>
+            {/* <div className="mb-4 flex flex-col">
+              <label htmlFor="nin" className="mb-1">
+                NIN
+              </label>
               <input
                 type="text"
                 id="nin"
+                className="rounded border border-gray-600 bg-black p-2 text-white"
                 placeholder="NIN"
                 {...register("nin", {
                   required: "NIN is required",
                   minLength: {
                     value: 11,
                     message:
-                      "National Identification Number must be at least 11 Numbers",
+                      "National Identification Number must be at least 11 numbers",
                   },
                   pattern: {
                     value: /^[0-9]+$/,
@@ -169,42 +207,62 @@ export const Signup = () => {
                   },
                 })}
                 aria-invalid={errors.nin ? "true" : "false"}
-                aria-live="assertive"
               />
-              <p className="error">{errors.nin?.message}</p>
-            </div>
-            <div className="form-group checkbox-group">
-              <label htmlFor="tipsCheckbox">
-                <input
-                  type="checkbox"
-                  id="tipsCheckbox"
-                  {...register("tipsCheckbox")}
-                />
-                Send me emails with tips on how to find talent that fits my
-                needs.
+              <p className="mt-1 text-sm text-red-500">{errors.nin?.message}</p>
+            </div> */}
+            <div className="mb-4 flex items-center">
+              <input
+                type="checkbox"
+                id="tipsCheckbox"
+                className="mr-2 accent-[#32cd32]"
+                {...register("tipsCheckbox")}
+              />
+              <label htmlFor="tipsCheckbox" className="text-gray-400">
+                Send me helpful emails to find rewarding work and job leads.
               </label>
             </div>
-            <div className="form-group checkbox-group">
-              <label htmlFor="termsCheckbox">
-                <input
-                  type="checkbox"
-                  id="termsCheckbox"
-                  {...register("termsCheckbox", { required: true })}
-                />
+            <div className="mb-4 flex items-center">
+              <input
+                type="checkbox"
+                id="termsCheckbox"
+                className="mr-2 accent-[#32cd32]"
+                {...register("termsCheckbox", { required: true })}
+              />
+              <label htmlFor="termsCheckbox" className="text-gray-400">
                 Yes, I understand and agree to the
-                <a href="#"> Workifyy Terms of Service</a>, including the
-                <a href="#"> User Agreement</a> and{" "}
-                <a href="#"> Privacy Policy</a>.
+                <a href="#" className="text-green-500">
+                  {" "}
+                  Workifyy Terms of Service
+                </a>
+                , including the
+                <a href="#" className="text-green-500">
+                  {" "}
+                  User Agreement
+                </a>{" "}
+                and
+                <a href="#" className="text-green-500">
+                  {" "}
+                  Privacy Policy
+                </a>
+                .
               </label>
               {errors.termsCheckbox && (
-                <p className="error">This field is required</p>
+                <p className="ml-2 text-sm text-red-500">
+                  This field is required
+                </p>
               )}
             </div>
-            <button type="submit" className="submit-btn">
+            <button
+              type="submit"
+              className="w-full rounded bg-[#32cd32] py-2 text-white hover:bg-green-600"
+            >
               Create my account
             </button>
-            <p className="toggle-text">
-              Already have an account? <a href="#">Log In</a>
+            <p className="mt-4 text-center text-gray-400">
+              Already have an account?{" "}
+              <a href="#" className="text-green-500">
+                Log In
+              </a>
             </p>
           </form>
         </div>
@@ -213,4 +271,4 @@ export const Signup = () => {
   );
 };
 
-export default Signup
+export default Signup;
