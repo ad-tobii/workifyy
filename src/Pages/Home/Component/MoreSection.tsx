@@ -34,7 +34,7 @@ export default function MoreSection() {
   ];
 
   return (
-    <div className="container mt-[10rem]">
+    <div className="mx-auto mt-[10rem]">
       <div className="mx-auto">
         <div className="text-center">
           <h1 className="text-[3rem] tracking-wide text-[#32CD32] laptop:text-[2rem]">
@@ -58,7 +58,9 @@ export default function MoreSection() {
                     alt=""
                     className="mx-auto h-[8rem] w-[8rem]"
                   />
-                  <p className="pt-3 text-white">{step.text}</p>
+                  <p className="mx-auto pt-3 text-center text-white">
+                    {step.text}
+                  </p>
                 </div>
               ))}
             </Carousel>
@@ -67,7 +69,9 @@ export default function MoreSection() {
               {steps.map((step, index) => (
                 <div key={index} className="p- mx-auto">
                   <img src={step.imgSrc} alt="" className="tablet:w-[6.5rem]" />
-                  <p className="pt-3 text-white">{step.text}</p>
+                  <p className="mx-auto pt-3 text-center text-white">
+                    {step.text}
+                  </p>
                 </div>
               ))}
             </div>

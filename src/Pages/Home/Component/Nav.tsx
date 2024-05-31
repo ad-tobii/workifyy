@@ -16,13 +16,12 @@ export default function Nav({ children }: NavProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className="relative h-[100vh] w-auto bg-[url('/assets/ClientSection.jpg')] bg-cover bg-center bg-no-repeat miniMobile:bg-center miniLaptop:h-[120vh]">
-      {/* Overlay */}
+    <div className=" relative  w-full bg-[url('/assets/ClientSection.jpg')] bg-cover bg-center  bg-no-repeat    miniTablet:w-full  miniTablet:bg-[url('/assets/HeroSectionMobile.jpg')]  miniTablet:bg-cover  miniTablet:bg-center miniTablet:bg-no-repeat ">
       <div className="pointer-events-none absolute inset-0 z-10 bg-black bg-opacity-50" />
 
-      <header className="absolute inset-x-0 top-0 z-30 border-b">
+      <header className="absolute inset-x-0 top-0 z-30 border-b p-3">
         <nav
-          className="flex items-center justify-between p-6"
+          className="flex items-center justify-between px-8"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
@@ -47,7 +46,7 @@ export default function Nav({ children }: NavProps) {
               <a
                 key={item.name}
                 href={item.href}
-                className=" relative text-xl font-semibold leading-6 text-white duration-500 ease-in-out after:absolute after:bottom-[-2rem] after:left-0 after:h-[3px] after:w-0 after:bg-[#32cd32] after:transition-all after:duration-300 hover:text-[#32cd32] hover:transition-all  hover:after:w-full"
+                className=" relative text-xl font-semibold leading-6 text-white duration-500 ease-in-out after:absolute after:bottom-[-1rem] after:left-0 after:h-[3px] after:w-0 after:bg-[#32cd32] after:transition-all after:duration-300 hover:text-[#32cd32] hover:transition-all  hover:after:w-full"
               >
                 {item.name}
               </a>
