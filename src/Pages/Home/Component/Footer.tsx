@@ -4,12 +4,12 @@ import { FaPhoneAlt } from "react-icons/fa";
 import BaseFooter from "./BaseFooter";
 function Footer() {
   return (
-    <footer className="container mt-[12.8rem]">
+    <footer className=" mt-[12.8rem]">
       <div className="relative mx-auto w-full bg-[#454a52ac] py-8">
-        <div className=" flex justify-between px-10 pb-8  miniLaptop:flex-col">
-          <div className="mt-[6rem]">
+        <div className=" flex justify-between self-center content-center  px-10 pb-8  miniLaptop:flex-col">
+          <div className="mt-[5rem]">
             <a href="#" className="">
-              <span className="nav__logo text-[3rem] text-[#32CD32] laptop:text-[1.5rem]">
+              <span className=" font-logoFonts text-[2rem] text-[#32CD32] laptop:text-[1.5rem]">
                 WORKIFYY
               </span>
             </a>
