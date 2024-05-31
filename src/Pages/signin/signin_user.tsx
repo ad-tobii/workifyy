@@ -28,20 +28,30 @@ export const Signin = () => {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <div>
-      <nav className="navbar">
-        <div className="logo">
-          <p>Workifyy</p>
+    <div className="min-h-screen bg-black text-white">
+      <nav className="flex items-center justify-between p-4">
+        <div className="text-3xl font-logoFonts text-[#32cd32]">Workifyy</div>
+        <div className="flex space-x-4">
+          <p className="text-lg mt-1 mobile:hidden miniTablet:hidden">Here to hire talent?</p>
+          <a
+            href="#"
+            className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-600"
+          >
+            Join as a client
+          </a>
         </div>
       </nav>
-      <div className="form-container">
-        <div className="form-wrapper">
-          <h2 className="form-title">Log in to Workifyy</h2>
+      <div className="flex min-h-screen items-center justify-center">
+        <div className="w-full mobile:w-80 max-w-md rounded-lg bg-zinc-800 p-8">
+          <h2 className="mb-6 text-center text-2xl font-bold">
+            Log in to Workifyy
+          </h2>
           <form onSubmit={handleSubmit(onSubmit)} noValidate>
-            <div className="form-group">
+            <div className="mb-4">
               <input
                 type="email"
                 id="email"
+                className="w-full rounded bg-white px-4 py-2 text-black focus:outline-none focus:ring focus:ring-green-600"
                 placeholder="Email"
                 {...register("email", {
                   required: "Email is required",
@@ -54,12 +64,17 @@ export const Signin = () => {
                 aria-invalid={errors.email ? "true" : "false"}
                 aria-live="assertive"
               />
-              <p className="error">{errors.email?.message}</p>
+              {errors.email && (
+                <p className="mt-1 text-sm text-red-500">
+                  {errors.email.message}
+                </p>
+              )}
             </div>
-            <div className="form-group">
+            <div className="mb-4">
               <input
                 type="password"
                 id="password"
+                className="w-full rounded bg-white px-4 py-2 text-black focus:outline-none focus:ring focus:ring-green-600"
                 placeholder="Password"
                 {...register("password", {
                   required: "Password is required",
@@ -77,41 +92,52 @@ export const Signin = () => {
                 aria-invalid={errors.password ? "true" : "false"}
                 aria-live="assertive"
               />
-              <p className="error">{errors.password?.message}</p>
+              {errors.password && (
+                <p className="mt-1 text-sm text-red-500">
+                  {errors.password.message}
+                </p>
+              )}
             </div>
-            <button type="submit" className="submit-btn">
+            <button
+              type="submit"
+              className="mb-4 w-full rounded bg-[#32cd32] py-2 font-bold text-white hover:bg-green-700"
+            >
               Continue
             </button>
-            <div className="or-divider">
-              <hr />
-              <span>or</span>
-              <hr />
+            <div className="mb-4 flex items-center justify-between">
+              <hr className="w-full border-gray-600" />
+              <span className="mx-2 text-gray-400">or</span>
+              <hr className="w-full border-gray-600" />
             </div>
-            <div className="btn-wrapper">
-              <button type="button" className="google-btn">
-                Continue with Google
-              </button>
-              <button type="button" className="apple-btn">
-                Continue with Apple
-              </button>
+            <button
+              type="button"
+              className="mb-4 w-full rounded bg-black py-2 font-bold text-white hover:bg-gray-700"
+            >
+              Continue with Google
+            </button>
+            <button
+              type="button"
+              className="w-full rounded bg-[#32cd32] py-2 font-bold text-white hover:bg-gray-900"
+            >
+              Continue with Apple
+            </button>
+            <div className="my-6 flex items-center justify-between">
+              <hr className="w-full border-gray-600" />
+              <span className="mx-2 text-gray-400">
+                Don't have a Workifyy account?
+              </span>
+              <hr className="w-full border-gray-600" />
             </div>
-            <br />
-            <br />
-            <br />
-            <div className="dont-divider">
-              <hr />
-              <p>
-                <span>Don't have an Workifyy account?</span>
-              </p>
-              <hr />
-            </div>
-            <button type="button" className="signup-btn">
+            <button
+              type="button"
+              className="w-full rounded bg-[#32cd32] py-2 font-bold text-white hover:bg-green-700"
+            >
               Sign Up
             </button>
           </form>
         </div>
       </div>
-      <footer>
+      <footer className="p-4 text-center">
         <p>© 2024 Workifyy® • Privacy Policy</p>
       </footer>
     </div>
