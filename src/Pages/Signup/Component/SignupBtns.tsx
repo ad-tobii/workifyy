@@ -1,4 +1,3 @@
-
 type FootProps = {
   selectedRadio: string | null;
 };
@@ -6,7 +5,7 @@ type FootProps = {
 function SignupBtns({ selectedRadio }: FootProps) {
   return (
     <>
-      <div className="mt-8 flex justify-center ">
+      <div className="mt-12 flex justify-center ">
         <button
           className={`rounded-3xl bg-zinc-300 px-4 py-2 font-bold text-white mobile:mt-4 mobile:w-[19rem] mobile:text-xl miniTablet:mt-4 miniTablet:w-96 miniTablet:text-2xl ${
             selectedRadio
@@ -20,7 +19,7 @@ function SignupBtns({ selectedRadio }: FootProps) {
       </div>
       <div className="mt-2 flex justify-center">
         {" "}
-        <p className="mt-3 text-center text-white  mobile:mt-4 mobile:text-xl miniTablet:mt-6  miniTablet:text-2xl">
+        <p className="mt-5 text-center text-white  mobile:mt-4 mobile:text-[1.22rem] miniTablet:mt-6  miniTablet:text-2xl ">
           Already have an account?{" "}
           <a href="#" className="mylink">
             Log In
@@ -31,4 +30,4 @@ function SignupBtns({ selectedRadio }: FootProps) {
   );
 }
 
-export default SignupBtns
+export default SignupBtns;
