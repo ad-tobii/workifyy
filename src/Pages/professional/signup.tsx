@@ -41,32 +41,41 @@ export const Signup = () => {
     }
   }, [isSubmitSuccessful, reset]);
   return (
-    <div className="flex min-h-screen flex-col items-center bg-black p-4 text-white">
-      <nav className="flex w-full items-center justify-between bg-black p-4 ">
-        <div className="text-2xl font-bold text-[#32cd32]">
-          <p>Workifyy</p>
+    <div className="flex min-h-screen flex-col  bg-black p-4 text-white">
+      <nav className=" flex w-full items-center justify-between bg-black p-4 ">
+        <div className="font-logoFonts text-[#32cd32]">
+          <p className="text-4xl mobile:-ml-4 mobile:text-[2.2rem] ">
+            Workifyy
+          </p>
         </div>
-        <ul className="flex space-x-4">
+        <ul className="flex space-x-4 ">
           <li>
-            <p className="text-lg">Here to hire talent?</p>
+            <p className="text-lg mobile:hidden miniTablet:hidden">
+              Here to hire talent?
+            </p>
           </li>
           <li>
-            <p>
+            <p className="miniMobile:hidden">
               <a
                 href="#"
-                className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-600"
+                className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-600 miniMobile:px-1"
               >
                 Join as a client
               </a>
             </p>
+            <button className="hidden w-32 rounded bg-[#32cd32] py-3 text-white   hover:bg-green-600 miniMobile:inline">
+              Join as a client
+            </button>
           </li>
         </ul>
       </nav>
       <div className="mt-8 flex flex-col items-center">
-        <div className="w-full max-w-md rounded-lg bg-zinc-700 p-6 shadow-md">
-          <h1 className="mb-4 text-2xl font-bold">
-            Sign up to find work you love
-          </h1>
+        <div className=" w-full max-w-[40rem] rounded-lg bg-zinc-800 p-6">
+          <div className=" ">
+            <h1 className="mb-4 text-2xl font-bold">
+              Sign up to find work you love
+            </h1>
+          </div>
           <div className="mb-4 flex flex-col space-y-2">
             <button
               type="button"
@@ -205,7 +214,7 @@ export const Signup = () => {
               <input
                 type="checkbox"
                 id="tipsCheckbox"
-                className="mr-2"
+                className="mr-2 accent-[#32cd32]"
                 {...register("tipsCheckbox")}
               />
               <label htmlFor="tipsCheckbox" className="text-gray-400">
@@ -216,7 +225,7 @@ export const Signup = () => {
               <input
                 type="checkbox"
                 id="termsCheckbox"
-                className="mr-2"
+                className="mr-2 accent-[#32cd32]"
                 {...register("termsCheckbox", { required: true })}
               />
               <label htmlFor="termsCheckbox" className="text-gray-400">
