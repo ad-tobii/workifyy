@@ -10,7 +10,7 @@ function SignupOtions() {
 
   return (
     <>
-      <div className="radiogroup mt-8  flex justify-center gap-x-3.5 mobile:inline  mobile:gap-0 miniTablet:inline ">
+      <div className="radiogroup mt-12  flex justify-center gap-x-5 mobile:inline  mobile:gap-0 miniTablet:inline ">
         <div className="mobile:mt-12 mobile:flex mobile:justify-center miniTablet:mt-12 miniTablet:flex miniTablet:justify-center">
           <input
             type="radio"
@@ -21,13 +21,13 @@ function SignupOtions() {
           />
 
           <label
-            className=" myrads flex h-48 w-48 rounded border-2 border-solid border-gray-400
+            className=" myrads flex h-56 w-56 rounded border-2 border-solid border-gray-400
       pt-4  text-white after:-ml-8 after:-mt-2 after:flex after:h-7
       after:w-7 after:gap-y-4 after:rounded-full after:border-4
-      after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:h-32 mobile:w-[19rem]  mobile:after:ml-5 miniTablet:w-[20rem] miniTablet:rounded miniTablet:after:-ml-[2.4rem] miniTablet:after:h-10 miniTablet:after:w-10"
+      after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:h-32 mobile:w-[19rem]  mobile:after:ml-5  miniTablet:h-[12rem] miniTablet:w-[20rem] miniTablet:rounded miniTablet:after:-ml-[2.4rem] miniTablet:after:h-10 miniTablet:after:w-10"
             htmlFor="radio1"
           >
-            <pre className="ml-2 mt-6 text-lg mobile:hidden miniTablet:hidden">
+            <pre className="ml-2 mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden">
               <FaHammer className="mb-3" />
               I’m a{"\n"}professional,{"\n"}looking for work.
             </pre>
@@ -37,7 +37,7 @@ function SignupOtions() {
             </pre>
           </label>
         </div>
-        <div className="mobile:mt-10 mobile:flex mobile:justify-center miniTablet:mt-8 miniTablet:flex miniTablet:justify-center">
+        <div className="mobile:mt-10 mobile:flex mobile:justify-center  miniTablet:mt-8 miniTablet:flex miniTablet:justify-center">
           {" "}
           <input
             type="radio"
@@ -47,13 +47,13 @@ function SignupOtions() {
             onChange={handleRadioChange}
           />
           <label
-            className=" myrads flex h-48 w-48 rounded border-2 border-solid border-gray-400
-      pt-4 text-white after:-mt-2 after:ml-2 after:flex after:h-7
+            className=" myrads flex h-56 w-56 rounded border-2 border-solid border-gray-400
+      pt-4 text-white after:-mt-2 after:ml-4 after:flex after:h-7
       after:w-7 after:gap-y-4 after:rounded-full after:border-4
-      after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:h-32   mobile:w-[19rem] mobile:after:-ml-1 miniTablet:w-[20rem] miniTablet:rounded miniTablet:after:-ml-[0.4rem] miniTablet:after:h-10 miniTablet:after:w-10"
+      after:border-solid after:border-gray-400 hover:border-[#32cd32]  mobile:h-32 mobile:w-[19rem]   mobile:after:-ml-1 miniTablet:h-[12rem] miniTablet:w-[20rem] miniTablet:rounded miniTablet:after:-ml-[0.4rem] miniTablet:after:h-10 miniTablet:after:w-10"
             htmlFor="radio2"
           >
-            <pre className="ml-2 mt-6 text-lg mobile:hidden miniTablet:hidden">
+            <pre className="ml-2 mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden">
               <FaUser className="mb-3" />
               I’m a client {"\n"}Looking to{"\n"}hire.
             </pre>
