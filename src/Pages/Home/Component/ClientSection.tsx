@@ -1,6 +1,6 @@
 function ClientSection() {
   return (
-    <section className="mx-auto max-w-[150rem] container ">
+    <section className="mx-auto max-w-[150rem] px-8 ">
       <div className="relative mx-auto mt-[8rem] w-full  rounded-[.6rem] bg-[url('/assets/ClientSection2.jpg')] bg-cover bg-center bg-no-repeat px-5 py-[5rem]  laptop:mx-auto laptop:w-[95%]">
         <div className="absolute inset-0 rounded-[.6rem] bg-black bg-opacity-30"></div>
         <div className="relative">
@@ -12,20 +12,20 @@ function ClientSection() {
             things done—from quick turnarounds to big transformations.
           </p>
           <section className="flex content-center items-center justify-center gap-[2rem] self-center pr-[.5rem] pt-12 miniMobile:mx-auto miniTablet:flex-col desktop:gap-[.8rem]">
-            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32]   miniTablet:w-[20rem] laptop:h-[9rem]">
-              <h3 className="pl-3 pt-1 text-[2rem] text-white laptop:text-[1.3rem]  ">
-                Lorem ipsum dolor sit amet.
-              </h3>
-              <p className="pl-3 text-[1rem] text-white">Lorem ipsum</p>
-            </div>
-            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32]   miniTablet:w-[20rem] laptop:h-[9rem]">
+            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32] miniTablet:w-[20rem] laptop:h-[9rem]">
               <h3 className="pl-3 pt-1 text-[2rem] text-white laptop:text-[1.3rem]">
                 Lorem ipsum dolor sit amet.
               </h3>
               <p className="pl-3 text-[1rem] text-white">Lorem ipsum</p>
             </div>
-            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32]  miniTablet:w-[20rem]  laptop:h-[9rem]">
-              <h3 className="pl-3 pt-1 text-[2rem] text-white laptop:text-[1.3rem]  ">
+            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32] miniTablet:w-[20rem] laptop:h-[9rem]">
+              <h3 className="pl-3 pt-1 text-[2rem] text-white laptop:text-[1.3rem]">
+                Lorem ipsum dolor sit amet.
+              </h3>
+              <p className="pl-3 text-[1rem] text-white">Lorem ipsum</p>
+            </div>
+            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32] miniTablet:w-[20rem] laptop:h-[9rem]">
+              <h3 className="pl-3 pt-1 text-[2rem] text-white laptop:text-[1.3rem]">
                 Lorem ipsum dolor sit amet.
               </h3>
               <p className="pl-3 text-[1rem] text-white">Lorem ipsum</p>
