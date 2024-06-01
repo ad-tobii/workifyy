@@ -1,6 +1,6 @@
 function ClientSection() {
   return (
-    <section className="mx-auto max-w-[150rem] px-8 ">
+    <section className="mx-auto max-w-[150rem] container ">
       <div className="relative mx-auto mt-[8rem] w-full  rounded-[.6rem] bg-[url('/assets/ClientSection2.jpg')] bg-cover bg-center bg-no-repeat px-5 py-[5rem]  laptop:mx-auto laptop:w-[95%]">
         <div className="absolute inset-0 rounded-[.6rem] bg-black bg-opacity-30"></div>
         <div className="relative">

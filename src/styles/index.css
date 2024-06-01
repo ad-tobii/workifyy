@@ -13,7 +13,9 @@
     @apply bg-[#000000];
   }
 }
-
+.container{
+  @apply max-w-[1250px] mx-auto
+}
 label:after {
   content: "";
 }

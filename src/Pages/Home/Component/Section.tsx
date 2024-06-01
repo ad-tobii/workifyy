@@ -4,7 +4,7 @@ import { FaShield } from "react-icons/fa6";
 
 function Section() {
   return (
-    <div className="mx-auto mt-28 flex content-center justify-between  self-center align-middle laptop:flex-col laptop:gap-[4rem]">
+    <div className=" mt-28 flex content-center justify-between  self-center align-middle laptop:flex-col laptop:gap-[4rem]">
       <div className="mx-auto">
         <img
           src="/assets/Workifyy-illustration.png"
