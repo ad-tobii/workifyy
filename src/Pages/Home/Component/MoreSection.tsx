@@ -34,7 +34,7 @@ export default function MoreSection() {
   ];
 
   return (
-    <div className="mx-auto mt-[10rem]">
+    <div className="container mt-[10rem]">
       <div className="mx-auto">
         <div className="text-center">
           <h1 className="text-[3rem] tracking-wide text-[#32CD32] laptop:text-[2rem]">
