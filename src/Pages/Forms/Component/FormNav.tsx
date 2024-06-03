@@ -3,30 +3,29 @@ import { Dialog } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
 
-const navigation = [
-  { name: "Sign Up", to: "/signup" },
-  { name: "Log In", to: "/signin" },
-  { name: "Explore", to: "" },
-];
-
-type NavProps = {
-  children: React.ReactNode;
+type FormLink = {
+  name: string;
+  to: string;
 };
 
-export default function Nav({ children }: NavProps) {
+type FormProps = {
+  Formnavigation?: FormLink[];
+};
+
+export default function Nav({  Formnavigation = [] }: FormProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className=" relative  w-full bg-[url('/assets/ClientSection2.jpg')] bg-cover bg-center  bg-no-repeat ">
+    <div className="relative w-full bg-[url('/assets/ClientSection.jpg')] bg-cover bg-center bg-no-repeat">
       <div className="pointer-events-none absolute inset-0 z-10 bg-black bg-opacity-50" />
 
       <header className="absolute inset-x-0 top-0 z-30 border-b p-3">
         <nav
-          className=" container flex items-center justify-between pt-1"
+          className="container flex items-center justify-between"
           aria-label="Global"
         >
           <div className="flex lg:flex-1">
-            <Link to="/" className="-m-1.5  text-white">
+            <Link to="/" className="-m-1.5 p-1.5 text-white">
               <span className="font-logoFonts text-3xl text-[#32CD32]">
                 WORKIFYY
               </span>
@@ -42,12 +41,16 @@ export default function Nav({ children }: NavProps) {
               <Bars3Icon className="h-6 w-6 text-white" aria-hidden="true" />
             </button>
           </div>
-          <div className="hidden text-white lg:flex lg:gap-x-12">
-            {navigation.map((item) => (
+          <div className="hidden text-white lg:flex lg:gap-x-6">
+            {Formnavigation.map((item) => (
               <Link
-                to={item.to}
                 key={item.name}
-                className="relative text-xl font-semibold leading-6 text-white duration-500 ease-in-out after:absolute after:bottom-[-1rem] after:left-0 after:h-[3px] after:w-0 after:bg-[#32cd32] after:transition-all after:duration-300 hover:text-[#32cd32] hover:transition-all hover:after:w-full"
+                to={item.to}
+                className={`mx-3 block rounded-lg px-3 py-2 text-base   font-semibold leading-7 text-white ${
+                  item.name === "Join as Client" ||  item.name === "Join as Professional"
+                    ? "rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-600"
+                    : " cursor-none hover:bg-none"
+                }`}
               >
                 {item.name}
               </Link>
@@ -57,11 +60,10 @@ export default function Nav({ children }: NavProps) {
 
         <Dialog
           open={mobileMenuOpen}
-          onClose={setMobileMenuOpen}
+          onClose={() => setMobileMenuOpen(false)}
           className="fixed inset-0 z-50 bg-white"
         >
           <div className="fixed inset-0 bg-black bg-opacity-50" />
-
           <Dialog.Panel className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-black px-6 py-6 miniLaptop:max-w-sm miniLaptop:ring-1 miniLaptop:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5 text-white">
@@ -81,11 +83,15 @@ export default function Nav({ children }: NavProps) {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-white">
                 <div className="space-y-2 py-6">
-                  {navigation.map((item) => (
+                  {Formnavigation.map((item) => (
                     <Link
                       key={item.name}
                       to={item.to}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-900"
+                      className={`mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-white hover:bg-gray-900 ${
+                        item.name === "Join as Client"
+                          ? "rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-600"
+                          : ""
+                      }`}
                     >
                       {item.name}
                     </Link>
@@ -104,8 +110,6 @@ export default function Nav({ children }: NavProps) {
           </Dialog.Panel>
         </Dialog>
       </header>
-
-      <div className="relative z-20">{children}</div>
     </div>
   );
 }
