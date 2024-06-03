@@ -3,18 +3,21 @@ import Home from "./Pages/Home/Home";
 import "./styles/index.css";
 
 import Signup from "./Pages/Signup/Signup";
-import Signup2 from "./Pages/professional/signup"
-import Signup3 from "./Pages/client/signup"
-import { Signin } from "./Pages/signin/signin_user";
+import { Signin } from "./Pages/Forms/signin/signin_user";
+import SignupasProfessional from "./Pages/Forms/professional/Professionalsignup";
+import ClientSignup from "./Pages/Forms/client/Clientsignup"
 const App = () => {
   return (
     <Router>
       <Routes>
         <Route path="" element={<Home />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
-        <Route path="/signup2" element={<Signup2 />}></Route>
-        <Route path="/signup3" element={<Signup3 />}></Route>
         <Route path="/signin" element={<Signin />}></Route>
+        <Route
+          path="/ProfessionalSignup"
+          element={<SignupasProfessional />}
+        ></Route>
+        <Route path="/ClientSignup" element={<ClientSignup />}></Route>
       </Routes>
     </Router>
   );

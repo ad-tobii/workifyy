@@ -15,7 +15,7 @@ const onError = (errors: FieldErrors<FormValues>) => {
   console.log("Form errors", errors);
 };
 
-export const Signup = () => {
+const Clientsignup = () => {
   const { register, handleSubmit, formState, reset } = useForm<FormValues>({
     defaultValues: {
       firstname: "",
@@ -42,40 +42,13 @@ export const Signup = () => {
   }, [isSubmitSuccessful, reset]);
   return (
     <div className="flex min-h-screen flex-col  bg-black p-4 text-white">
-      <nav className=" flex w-full items-center justify-between bg-black p-4 ">
-        <div className="font-logoFonts text-[#32cd32]">
-          <p className="text-4xl mobile:-ml-4 mobile:text-[2.2rem] ">
-            Workifyy
-          </p>
-        </div>
-        <ul className="flex space-x-4 ">
-          <li>
-            <p className="text-lg mobile:hidden miniTablet:hidden">
-              Here to hire talent?
-            </p>
-          </li>
-          <li>
-            <p className="miniMobile:hidden">
-              <a
-                href="#"
-                className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-600 miniMobile:px-1"
-              >
-                Join as a client
-              </a>
-            </p>
-            <button className="hidden w-32 rounded bg-[#32cd32] py-3 text-white   hover:bg-green-600 miniMobile:inline">
-              Join as a client
-            </button>
-          </li>
-        </ul>
-      </nav>
-      <div className="mt-8 flex flex-col items-center">
+    
+
+      <div className="mt-[10rem] flex flex-col items-center">
         <div className=" w-full max-w-[40rem] rounded-lg bg-zinc-800 p-6">
-          <div className=" ">
-            <h1 className="mb-4 text-2xl font-bold">
-              Sign up to find work you love
-            </h1>
-          </div>
+          <h1 className=" pb-10 text-center  text-2xl font-bold">
+            Sign up to find work you love
+          </h1>
           <div className="mb-4 flex flex-col space-y-2">
             <button
               type="button"
@@ -185,31 +158,7 @@ export const Signup = () => {
                 {errors.password?.message}
               </p>
             </div>
-            {/* <div className="mb-4 flex flex-col">
-              <label htmlFor="nin" className="mb-1">
-                NIN
-              </label>
-              <input
-                type="text"
-                id="nin"
-                className="rounded border border-gray-600 bg-black p-2 text-white"
-                placeholder="NIN"
-                {...register("nin", {
-                  required: "NIN is required",
-                  minLength: {
-                    value: 11,
-                    message:
-                      "National Identification Number must be at least 11 numbers",
-                  },
-                  pattern: {
-                    value: /^[0-9]+$/,
-                    message: "NIN must be a number",
-                  },
-                })}
-                aria-invalid={errors.nin ? "true" : "false"}
-              />
-              <p className="mt-1 text-sm text-red-500">{errors.nin?.message}</p>
-            </div> */}
+
             <div className="mb-4 flex items-center">
               <input
                 type="checkbox"
@@ -271,4 +220,4 @@ export const Signup = () => {
   );
 };
 
-export default Signup;
+export default Clientsignup;

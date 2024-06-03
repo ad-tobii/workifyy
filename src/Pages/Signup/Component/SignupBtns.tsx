@@ -1,8 +1,19 @@
+import { useNavigate, Link } from "react-router-dom";
 type FootProps = {
   selectedRadio: string | null;
 };
 
 function SignupBtns({ selectedRadio }: FootProps) {
+  const navigate = useNavigate();
+
+  const handleButtonClick = () => {
+    if (selectedRadio === "radio1") {
+      navigate("/ProfessionalSignup"); 
+    } else if (selectedRadio === "radio2") {
+      navigate("/ClientSignup"); 
+    }
+  };
+
   return (
     <>
       <div className="mt-12 flex justify-center ">
@@ -13,6 +24,7 @@ function SignupBtns({ selectedRadio }: FootProps) {
               : "cursor-not-allowed opacity-50"
           }`}
           disabled={!selectedRadio}
+          onClick={handleButtonClick}
         >
           Create Account
         </button>
@@ -21,9 +33,9 @@ function SignupBtns({ selectedRadio }: FootProps) {
         {" "}
         <p className="mt-5 text-center text-white  mobile:mt-4 mobile:text-[1.22rem] miniTablet:mt-6  miniTablet:text-2xl ">
           Already have an account?{" "}
-          <a href="#" className="mylink">
+          <Link to="/signin" className="mylink">
             Log In
-          </a>
+          </Link>
         </p>
       </div>
     </>

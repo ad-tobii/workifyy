@@ -28,8 +28,8 @@ export const Signin = () => {
   }, [isSubmitSuccessful, reset]);
 
   return (
-    <div className="min-h-screen bg-black text-white">
-      <nav className="flex items-center justify-between p-4">
+    <div className=" bg-black text-white">
+      {/* <nav className="flex items-center justify-between p-4">
         <div className="text-3xl font-logoFonts text-[#32cd32]">Workifyy</div>
         <div className="flex space-x-4">
           <p className="text-lg mt-1 mobile:hidden miniTablet:hidden">Here to hire talent?</p>
@@ -40,12 +40,15 @@ export const Signin = () => {
             Join as a client
           </a>
         </div>
-      </nav>
-      <div className="flex min-h-screen items-center justify-center">
-        <div className="w-full mobile:w-80 max-w-md rounded-lg bg-zinc-800 p-8">
+      </nav> */}
+
+      
+    
           <h2 className="mb-6 text-center text-2xl font-bold">
             Log in to Workifyy
           </h2>
+      <div className="flex items-center justify-center">
+        <div className="w-full mobile:w-80 max-w-md rounded-lg bg-zinc-800 p-8">
           <form onSubmit={handleSubmit(onSubmit)} noValidate>
             <div className="mb-4">
               <input
@@ -121,12 +124,12 @@ export const Signin = () => {
             >
               Continue with Apple
             </button>
-            <div className="my-6 flex items-center justify-between">
-              <hr className="w-full border-gray-600" />
-              <span className="mx-2 text-gray-400">
+            <div className="my-6 flex gap-2 content-center items-center justify-center ">
+              <hr className="w-[5rem] border-gray-600" />
+              <p className=" text-gray-400 text-[.8rem]">
                 Don't have a Workifyy account?
-              </span>
-              <hr className="w-full border-gray-600" />
+              </p>
+              <hr className="w-[5rem] border-gray-600" />
             </div>
             <button
               type="button"
@@ -137,9 +140,7 @@ export const Signin = () => {
           </form>
         </div>
       </div>
-      <footer className="p-4 text-center">
-        <p>© 2024 Workifyy® • Privacy Policy</p>
-      </footer>
+     
     </div>
   );
 };

@@ -8,7 +8,7 @@ function Section() {
       <div className="mx-auto">
         <img
           src="/assets/Workifyy-illustration.png"
-          className="w-[30rem] rounded miniTablet:w-[20rem]"
+          className="w-[28rem]  miniTablet:w-[18rem] mobile:w-[16rem]"
           alt=""
         />
       </div>
