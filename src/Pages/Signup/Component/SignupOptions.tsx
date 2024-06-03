@@ -25,11 +25,11 @@ function SignupOtions() {
       after:border-solid after:border-gray-400 hover:border-[#32cd32]   mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
           htmlFor="radio1"
         >
-          <pre className="ml-2 mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden">
+          <pre className="ml-2 mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden laptop:text-[140%]">
             <FaHammer className="mb-3" />
             I’m a{"\n"}professional,{"\n"}looking for work.
           </pre>
-          <pre className="hidden mobile:inline-block ml-[5%] mt-[5%] text-[1.5rem] ">
+          <pre className="ml-[5%] mt-[5%] hidden text-[1.5rem] mobile:inline-block ">
             <FaHammer className="mb-3" />
             I’m a professional,{"\n"}looking for work.
           </pre>
@@ -48,12 +48,12 @@ function SignupOtions() {
       after:border-4 after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:-ml-[85%] mobile:mt-[50%] mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
           htmlFor="radio2"
         >
-          <pre className="  ml-2 mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden">
+          <pre className=" ml-2  mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden laptop:text-[140%]">
             <FaUser className="mb-3" />
             I’m a client {"\n"}Looking to{"\n"}hire.
           </pre>
 
-          <pre className="hidden ml-[5%] mt-[8%] text-[1.5rem]  mobile:inline-block ">
+          <pre className="ml-[5%] mt-[8%] hidden text-[1.5rem]  mobile:inline-block ">
             <FaUser className="" />
             I'm a client looking{"\n"}to hire.
           </pre>
