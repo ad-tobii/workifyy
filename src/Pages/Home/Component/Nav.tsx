@@ -64,11 +64,11 @@ export default function Nav({ children }: NavProps) {
 
           <Dialog.Panel className="fixed inset-y-0 right-0 w-full overflow-y-auto bg-black px-6 py-6 miniLaptop:max-w-sm miniLaptop:ring-1 miniLaptop:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5 text-white">
+              <Link to="/" className="-m-1.5 p-1.5 text-white">
                 <span className="font-logoFonts text-3xl text-[#32CD32]">
                   WORKIFYY
                 </span>
-              </a>
+              </Link>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-white"
@@ -92,12 +92,12 @@ export default function Nav({ children }: NavProps) {
                   ))}
                 </div>
                 <div className="py-6">
-                  <a
-                    href="#"
+                  <Link
+                    to=""
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
