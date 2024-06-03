@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <div className="mt-3">
+    <div className="mt-3 miniTablet:hidden">
       <h1 className="flex justify-center text-4xl text-white mobile:hidden miniTablet:hidden">
         Join as a client or professional
       </h1>
