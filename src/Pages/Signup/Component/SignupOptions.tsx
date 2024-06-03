@@ -24,7 +24,7 @@ function SignupOtions() {
             className=" myrads flex h-56 w-56 cursor-pointer rounded border-2 border-solid border-gray-400
       pt-4  text-white after:-ml-8 after:-mt-2 after:flex after:h-7
       after:w-7 after:gap-y-4 after:rounded-full after:border-4
-      after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:h-32 mobile:w-[19rem]  mobile:after:ml-5  miniTablet:h-[12rem] miniTablet:w-[20rem] miniTablet:rounded miniTablet:after:-ml-[2.4rem] miniTablet:after:h-10 miniTablet:after:w-10"
+      after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:h-32 mobile:w-[19rem]  mobile:after:ml-1  miniTablet:h-[12rem] miniTablet:w-[20rem] miniTablet:rounded miniTablet:after:-ml-[8rem] miniTablet:after:h-10 miniTablet:after:w-10"
             htmlFor="radio1"
           >
             <pre className="ml-2 mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden">
