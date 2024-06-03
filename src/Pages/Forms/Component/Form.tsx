@@ -1,6 +1,6 @@
 import { FieldErrors, useForm } from "react-hook-form";
 import { useEffect } from "react";
-
+import { Link } from "react-router-dom";
 type FormValues = {
   firstname: string;
   lastname: string;
@@ -209,9 +209,9 @@ const Clientsignup = () => {
             </button>
             <p className="mt-4 text-center text-gray-400">
               Already have an account?{" "}
-              <a href="#" className="text-green-500">
+              <Link to="/signin" className="text-green-500">
                 Log In
-              </a>
+              </Link>
             </p>
           </form>
         </div>

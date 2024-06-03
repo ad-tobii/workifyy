@@ -6,10 +6,10 @@
 
 export const ProfessionalFormNav = [
   { name: "Here to hire Professional?", to: "" },
-  { name: "Join as Client", to: "/client" },
+  { name: "Join as Client", to: "/Clientsignup" },
 ];
 
 export const ClientFormNav = [
-   { name: "Looking for Work?", to: "" },
-  { name: "Join as Professional", to: "/client" },
-]
+  { name: "Looking for Work?", to: "" },
+  { name: "Join as Professional", to: "/Professionalsignup" },
+];
