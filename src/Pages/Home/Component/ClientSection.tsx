@@ -12,19 +12,19 @@ function ClientSection() {
             things done—from quick turnarounds to big transformations.
           </p>
           <section className="flex content-center items-center justify-center gap-[2rem] self-center pr-[.5rem] pt-12  miniMobile:flex-col mobile:flex-col miniTablet:flex-col desktop:gap-[.8rem]">
-            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32] miniMobile:w-[20rem] mobile:w-[23rem] miniTablet:w-[24rem] laptop:h-[9rem]">
+            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32] miniMobile:w-[18rem] mobile:w-[20rem] miniTablet:w-[24rem] laptop:h-[9rem]">
               <h3 className="pl-3 pt-1 text-[2rem] text-white laptop:text-[1.3rem]">
                 Lorem ipsum dolor sit amet.
               </h3>
               <p className="pl-3 text-[1rem] text-white">Lorem ipsum</p>
             </div>
-            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32] miniMobile:w-[20rem] mobile:w-[23rem]  miniTablet:w-[24rem] laptop:h-[9rem]">
+            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32] miniMobile:w-[18rem] mobile:w-[20rem]  miniTablet:w-[24rem] laptop:h-[9rem]">
               <h3 className="pl-3 pt-1 text-[2rem] text-white laptop:text-[1.3rem]">
                 Lorem ipsum dolor sit amet.
               </h3>
               <p className="pl-3 text-[1rem] text-white">Lorem ipsum</p>
             </div>
-            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32] miniMobile:w-[20rem] mobile:w-[23rem]  miniTablet:w-[24rem] laptop:h-[9rem]">
+            <div className="h-[9rem] w-[24rem] rounded-md bg-[#32CD32] miniMobile:w-[18rem] mobile:w-[20rem]  miniTablet:w-[24rem] laptop:h-[9rem]">
               <h3 className="pl-3 pt-1 text-[2rem] text-white laptop:text-[1.3rem]">
                 Lorem ipsum dolor sit amet.
               </h3>
