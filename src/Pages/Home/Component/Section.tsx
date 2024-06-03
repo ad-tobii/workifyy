@@ -8,7 +8,7 @@ function Section() {
       <div className="mx-auto">
         <img
           src="/assets/Workifyy-illustration.png"
-          className="w-[28rem]  miniTablet:w-[18rem] mobile:w-[16rem]"
+          className="w-[28rem]  mobile:w-[16rem] miniTablet:w-[18rem]"
           alt=""
         />
       </div>
@@ -25,7 +25,7 @@ function Section() {
             <h2 className="text-xl font-bold miniTablet:text-lg">
               No cost to join
             </h2>
-            <li className="font-extralight text-[#32CD32] miniTablet:pr-10 miniTablet:text-sm desktop:max-w-[28rem]">
+            <li className="font-extralight text-[#32CD32] miniMobile:text-sm miniTablet:pr-10 miniTablet:text-base desktop:max-w-[28rem]">
               Register and browse professionals, explore projects, or even book
               a consultation.
             </li>
@@ -40,7 +40,7 @@ function Section() {
             <h2 className="text-xl font-bold miniTablet:text-lg">
               Post a job and hire top talent
             </h2>
-            <li className="font-extralight text-[#32CD32] miniTablet:pr-10 miniTablet:text-sm desktop:max-w-[25rem]">
+            <li className="font-extralight text-[#32CD32]  miniMobile:text-sm  miniTablet:pr-10 miniTablet:text-sm desktop:max-w-[23rem]">
               Finding talent doesn’t have to be a chore. Post a job or we can
               search for you!
             </li>
@@ -55,7 +55,7 @@ function Section() {
             <h2 className="text-xl font-bold miniTablet:text-lg">
               Work with the best—without breaking the bank
             </h2>
-            <li className="font-extralight text-[#32CD32] miniTablet:pr-10  miniTablet:text-sm desktop:max-w-[28rem]">
+            <li className="font-extralight text-[#32CD32] miniMobile:text-sm miniTablet:pr-10  miniTablet:text-sm desktop:max-w-[28rem]">
               Workifyy makes it affordable to up your work and take advantage of
               low transaction rates.
             </li>
