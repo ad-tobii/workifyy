@@ -29,7 +29,7 @@ function SignupOtions() {
             <FaHammer className="mb-3" />
             I’m a{"\n"}professional,{"\n"}looking for work.
           </pre>
-          <pre className="ml-[5%] mt-[5%] hidden text-[1.5rem] mobile:inline-block ">
+          <pre className="ml-[5%] mt-[5%] hidden text-[135%] mobile:inline-block ">
             <FaHammer className="mb-3" />
             I’m a professional,{"\n"}looking for work.
           </pre>
@@ -57,8 +57,8 @@ function SignupOtions() {
             I’m a client {"\n"}Looking to{"\n"}hire.
           </pre>
 
-          <pre className="ml-[5%] mt-[8%] hidden text-[1.5rem]  mobile:inline-block ">
-            <FaUser className="" />
+          <pre className="ml-[5%] mt-[8%] hidden text-[135%]  mobile:inline-block ">
+            <FaUser className="mb-3" />
             I'm a client looking{"\n"}to hire.
           </pre>
           <pre className="tabs:inline-block  font-semibold ml-[4%] mt-[4%] hidden text-[135%] ">
