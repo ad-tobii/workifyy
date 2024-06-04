@@ -19,7 +19,7 @@ function SignupOtions() {
           onChange={handleRadioChange}
         />
         <label
-          className="   tabs:w-[80%] tabs:h-[8rem] tabs:after:-mt-[18%] tabs:after:ml-[90%] h-56 w-56 cursor-pointer rounded
+          className="  tabs:w-[90%] tabs:h-[8rem] tabs:after:-mt-[16%] tabs:after:ml-[90%] h-56 w-56 cursor-pointer rounded
       border-2  border-solid border-gray-400 pt-4 text-white  after:-mt-[75%]
       after:ml-[83%]  after:flex after:h-7
       after:w-7 after:rounded-full after:border-4   after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
@@ -33,7 +33,7 @@ function SignupOtions() {
             <FaHammer className="mb-3" />
             I’m a professional,{"\n"}looking for work.
           </pre>
-          <pre className="tabs:inline-block ml-[4%] mt-[4%] hidden text-[127%] ">
+          <pre className="tabs:inline-block  ml-[4%]  mt-[4%] hidden text-[135%] font-semibold ">
             <FaHammer className="mb-3" />
             I’m a professional, looking for work.
           </pre>
@@ -46,7 +46,7 @@ function SignupOtions() {
           onChange={handleRadioChange}
         />
         <label
-          className="tabs:w-[80%] tabs:h-[8rem] tabs:after:-mt-[18%] tabs:after:ml-[90%] tabs:mt-[28%] tabs:-ml-[83.2%] h-56 w-56 cursor-pointer rounded
+          className="tabs:w-[90%] tabs:h-[8rem] tabs:after:-mt-[16%] tabs:after:ml-[90%] tabs:mt-[28%] tabs:-ml-[93.2%] h-56 w-56 cursor-pointer rounded
       border-2 border-solid border-gray-400 pt-4 text-white after:-mt-[75%]
       after:ml-[83%]  after:flex after:h-7
       after:w-7 after:rounded-full after:border-4 after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:-ml-[85%] mobile:mt-[50%] mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
@@ -61,7 +61,7 @@ function SignupOtions() {
             <FaUser className="" />
             I'm a client looking{"\n"}to hire.
           </pre>
-          <pre className="tabs:inline-block ml-[4%] mt-[4%] hidden text-[130%] ">
+          <pre className="tabs:inline-block  font-semibold ml-[4%] mt-[4%] hidden text-[135%] ">
             <FaUser className="mb-3" />
             I'm a client looking to hire.
           </pre>
