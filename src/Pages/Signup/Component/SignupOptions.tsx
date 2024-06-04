@@ -19,13 +19,13 @@ function SignupOtions() {
           onChange={handleRadioChange}
         />
         <label
-          className="  tabs:w-[90%] tabs:h-[8rem] tabs:after:-mt-[16%] tabs:after:ml-[90%] h-56 w-56 cursor-pointer rounded
-      border-2  border-solid border-gray-400 pt-4 text-white  after:-mt-[75%]
+          className="  tabs:w-[90%] tabs:h-[8rem] tabs:after:-mt-[16%] tabs:after:ml-[90%] h-56 w-[28%] cursor-pointer rounded
+      border-2  border-solid border-gray-400 pt-4 text-white  after:-mt-[70%]
       after:ml-[83%]  after:flex after:h-7
       after:w-7 after:rounded-full after:border-4   after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
           htmlFor="radio1"
         >
-          <pre className="tabs:hidden ml-2 mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden">
+          <pre className="tabs:hidden ml-[5%] mt-6 text-[140%] mobile:hidden miniTablet:hidden">
             <FaHammer className="mb-3" />
             I’m a{"\n"}professional,{"\n"}looking for work.
           </pre>
@@ -46,13 +46,13 @@ function SignupOtions() {
           onChange={handleRadioChange}
         />
         <label
-          className="tabs:w-[90%] tabs:h-[8rem] tabs:after:-mt-[16%] tabs:after:ml-[90%] tabs:mt-[28%] tabs:-ml-[93.2%] h-56 w-56 cursor-pointer rounded
-      border-2 border-solid border-gray-400 pt-4 text-white after:-mt-[75%]
+          className="tabs:w-[90%] tabs:h-[8rem] tabs:after:-mt-[16%] tabs:after:ml-[90%] tabs:mt-[28%] tabs:-ml-[93.2%] h-56 w-[28%] cursor-pointer rounded
+      border-2 border-solid border-gray-400 pt-4 text-white after:-mt-[70%]
       after:ml-[83%]  after:flex after:h-7
       after:w-7 after:rounded-full after:border-4 after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:-ml-[85%] mobile:mt-[50%] mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
           htmlFor="radio2"
         >
-          <pre className=" tabs:text-[135%]  tabs:hidden ml-2 mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden">
+          <pre className="text-[140%]  tabs:hidden ml-[5%] mt-6 mobile:hidden miniTablet:hidden">
             <FaUser className="mb-3" />
             I’m a client {"\n"}Looking to{"\n"}hire.
           </pre>
