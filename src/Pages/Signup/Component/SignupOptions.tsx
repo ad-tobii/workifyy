@@ -33,7 +33,7 @@ function SignupOtions() {
             <FaHammer className="mb-3" />
             I’m a professional,{"\n"}looking for work.
           </pre>
-          <pre className="tabs:inline-block ml-[4%] mt-[4%] hidden text-[130%] ">
+          <pre className="tabs:inline-block ml-[4%] mt-[4%] hidden text-[127%] ">
             <FaHammer className="mb-3" />
             I’m a professional, looking for work.
           </pre>
