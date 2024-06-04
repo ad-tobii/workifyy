@@ -22,7 +22,7 @@ function SignupOtions() {
           className="   h-56 w-56 cursor-pointer rounded border-2 border-solid border-gray-400
       pt-4  text-white after:-mt-[75%] after:ml-[83%] after:flex  after:h-7
       after:w-7  after:rounded-full after:border-4
-      after:border-solid after:border-gray-400 hover:border-[#32cd32]   mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
+      after:border-solid after:border-gray-400 hover:border-[#32cd32]   mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%] laptop:w-[38%] laptop:after:-mt-[65%]"
           htmlFor="radio1"
         >
           <pre className="ml-2 mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden laptop:text-[135%]">
@@ -45,7 +45,7 @@ function SignupOtions() {
           className=" h-56 w-56 cursor-pointer rounded border-2 border-solid
       border-gray-400 pt-4 text-white after:-mt-[75%] after:ml-[83%] after:flex
       after:h-7  after:w-7 after:rounded-full
-      after:border-4 after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:-ml-[85%] mobile:mt-[50%] mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
+      after:border-4 after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:-ml-[85%] mobile:mt-[50%] mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%] laptop:w-[38%] laptop:after:-mt-[65%]"
           htmlFor="radio2"
         >
           <pre className=" ml-2  mt-6 text-[1.4rem] mobile:hidden miniTablet:hidden laptop:text-[135%]">
