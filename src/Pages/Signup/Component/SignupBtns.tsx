@@ -18,7 +18,7 @@ function SignupBtns({ selectedRadio }: FootProps) {
     <>
       <div className="tabs:mt-[5%] mt-12 flex justify-center miniTablet:hidden">
         <button
-          className={`rounded-3xl bg-zinc-300 px-4 py-2 font-bold text-white mobile:mt-4 mobile:w-[19rem] mobile:text-xl miniTablet:mt-4 miniTablet:w-96 miniTablet:text-2xl ${
+          className={`tabs:w-[90%] tabs:rounded-lg rounded-3xl bg-zinc-300 px-4 py-2 font-bold text-white mobile:mt-4 mobile:w-[19rem] mobile:text-xl miniTablet:mt-4 miniTablet:w-96 miniTablet:text-2xl ${
             selectedRadio
               ? "myb cursor-pointer"
               : "cursor-not-allowed opacity-50"
