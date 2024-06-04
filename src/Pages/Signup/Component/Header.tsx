@@ -1,7 +1,7 @@
 function Header() {
   return (
-    <div className="mt-3 miniTablet:hidden">
-      <h1 className="flex justify-center text-4xl text-white mobile:hidden miniTablet:hidden">
+    <div className="mt-3 tabs:mt-10 miniTablet:hidden">
+      <h1 className="flex justify-center tabs:text-[175%] tabs:font-medium text-4xl text-white mobile:hidden miniTablet:hidden">
         Join as  client or professional
       </h1>
       <pre className="mt-12 hidden justify-center text-3xl text-white mobile:flex miniTablet:mt-10 miniTablet:flex miniTablet:text-4xl">
