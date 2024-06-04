@@ -19,7 +19,7 @@ function SignupOtions() {
           onChange={handleRadioChange}
         />
         <label
-          className="   tabs:w-[60%] tabs:h-[8rem] tabs:after:-mt-[20%] tabs:after:ml-[90%] h-56 w-56 cursor-pointer rounded
+          className="   tabs:w-[80%] tabs:h-[8rem] tabs:after:-mt-[18%] tabs:after:ml-[90%] h-56 w-56 cursor-pointer rounded
       border-2  border-solid border-gray-400 pt-4 text-white  after:-mt-[75%]
       after:ml-[83%]  after:flex after:h-7
       after:w-7 after:rounded-full after:border-4   after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
@@ -46,7 +46,7 @@ function SignupOtions() {
           onChange={handleRadioChange}
         />
         <label
-          className="tabs:w-[60%] tabs:h-[8rem] tabs:after:-mt-[20%] tabs:after:ml-[90%] tabs:mt-[22%] tabs:-ml-[62.6%] h-56 w-56 cursor-pointer rounded
+          className="tabs:w-[80%] tabs:h-[8rem] tabs:after:-mt-[18%] tabs:after:ml-[90%] tabs:mt-[28%] tabs:-ml-[83.2%] h-56 w-56 cursor-pointer rounded
       border-2 border-solid border-gray-400 pt-4 text-white after:-mt-[75%]
       after:ml-[83%]  after:flex after:h-7
       after:w-7 after:rounded-full after:border-4 after:border-solid after:border-gray-400 hover:border-[#32cd32] mobile:-ml-[85%] mobile:mt-[50%] mobile:h-[10rem] mobile:w-[80%] mobile:after:-mt-[40%] mobile:after:ml-[87%]"
