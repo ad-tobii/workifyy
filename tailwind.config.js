@@ -10,7 +10,7 @@ export default {
         mobile: { max: "25.875em" }, // max: 414px
         miniTablet: { min: "425px", max: "31.25em" }, // min: 425px, max: 500px
         tablet: { max: "37.5em" }, // max: 600px
-        tabs:{min:"700",max:"800px"},
+        tabs: { min: "700px", max: "800px" },
         miniLaptop: { max: "42em" }, // max: 672px
         laptop: { max: "56.25em" }, // min: 601px, max: 900px
         desktop: { max: "75em" }, // min: 901px, max: 1200px
