@@ -8,6 +8,7 @@ export default {
         xsMobile: { max: "20em" }, // max: 320px
         miniMobile: { max: "25.75em" }, // min: 360px, max: 412px
         mobile: { max: "25.875em" }, // max: 414px
+        Lmobile:{min:"415px",max:"599px"},
         miniTablet: { min: "425px", max: "31.25em" }, // min: 425px, max: 500px
         tablet: { max: "37.5em" }, // max: 600px
         tabs: { min: "600px", max: "692px" },
