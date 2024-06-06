@@ -1,7 +1,7 @@
 import Navbar from "./Component/Navbar";
 import HeroSection from "./Component/HeroSection";
 
-const Home = () => {
+const ClientDashboard = () => {
   return (
     <div className="min-h-screen bg-gray-100">
       <Navbar />
@@ -12,4 +12,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default ClientDashboard;
