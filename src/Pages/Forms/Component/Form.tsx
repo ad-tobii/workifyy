@@ -49,8 +49,9 @@ const Form = ({text}:{text:HeadingType["text"]}) => {
   }, [isSubmitSuccessful, reset]);
   return (
     <div className="flex min-h-screen flex-col  bg-black p-4 text-white">
-      <FaUserAlt/>
-      <div className="mt-[8rem] flex flex-col items-center">
+    
+
+      <div className="mt-[10rem] flex flex-col items-center">
         <div className=" w-full max-w-[40rem] rounded-lg bg-zinc-800 p-6">
           <h1 className="pb-3 text-center text-[2rem]">
             {text === "Sign-up-for-the-work-you-love"
@@ -211,12 +212,14 @@ const Form = ({text}:{text:HeadingType["text"]}) => {
                 </p>
               )}
             </div>
-            <button
-              type="submit"
-              className="w-full rounded bg-[#32cd32] py-2 text-white hover:bg-green-600"
-            >
-              Create my account
-            </button>
+            <Link to="/ClientDashboard">
+              <button
+                type="submit"
+                className="w-full rounded bg-[#32cd32] py-2 text-white hover:bg-green-600"
+              >
+                Create my account
+              </button>
+            </Link>
             <p className="mt-4 text-center text-gray-400">
               Already have an account?{" "}
               <Link to="/signin" className="text-green-500">

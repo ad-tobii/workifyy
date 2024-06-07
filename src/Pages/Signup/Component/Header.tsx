@@ -1,18 +1,17 @@
 function Header() {
   return (
-    <div className="mt-3">
-      <h1 className="flex justify-center text-4xl text-white mobile:hidden miniTablet:hidden">
-        Join as a client or professional
+    <div className="tabs:mt-10 mt-3 ">
+      <h1 className="tabs:text-[175%] tabs:font-medium Lmobile:hidden flex justify-center text-4xl text-white mobile:hidden">
+        Join as client or professional
       </h1>
-      <pre className="mt-12 hidden justify-center text-3xl text-white mobile:flex miniTablet:mt-10 miniTablet:flex miniTablet:text-4xl">
+      <pre className="Lmobile:mt-10 Lmobile:text-[220%] Lmobile:flex mt-12 hidden justify-center text-[1.8rem] text-white mobile:flex ">
         Join as a client or
       </pre>
-      <pre className="mt-2 hidden justify-center text-3xl text-white mobile:flex  miniTablet:mt-2 miniTablet:flex miniTablet:text-4xl">
+      <pre className="Lmobile:mt-2 Lmobile:text-[220%] Lmobile:flex mt-2 hidden justify-center  text-[1.8rem] text-white  mobile:flex ">
         professional
       </pre>
     </div>
   );
 }
 
-
-export default Header
+export default Header;

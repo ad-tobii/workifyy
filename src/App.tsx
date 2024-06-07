@@ -5,7 +5,8 @@ import "./styles/index.css";
 import Signup from "./Pages/Signup/Signup";
 import { Signin } from "./Pages/Forms/signin/signin_user";
 import SignupasProfessional from "./Pages/Forms/professional/Professionalsignup";
-import ClientSignup from "./Pages/Forms/client/Clientsignup"
+import ClientSignup from "./Pages/Forms/client/Clientsignup";
+import ClientDashboardHome from "./Pages/ClientDashboard/Home";
 const App = () => {
   return (
     <Router>
@@ -18,6 +19,10 @@ const App = () => {
           element={<SignupasProfessional />}
         ></Route>
         <Route path="/ClientSignup" element={<ClientSignup />}></Route>
+        <Route
+          path="/ClientDashboard"
+          element={<ClientDashboardHome />}
+        ></Route>
       </Routes>
     </Router>
   );
