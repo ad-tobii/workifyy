@@ -10,7 +10,7 @@ interface Transaction {
 }
 
 const Wallet: React.FC = () => {
-  const [balance, setBalance] = useState<number>(100);
+  const [balance, setBalance] = useState<number>(150);
   const [amount, setAmount] = useState<string>("");
   const [transactions, setTransactions] = useState<Transaction[]>([
     {
