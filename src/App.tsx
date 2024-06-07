@@ -7,9 +7,13 @@ import { Signin } from "./Pages/Forms/signin/signin_user";
 import SignupasProfessional from "./Pages/Forms/professional/Professionalsignup";
 import ClientSignup from "./Pages/Forms/client/Clientsignup";
 import ClientDashboardHome from "./Pages/ClientDashboard/Home";
+import Wallet from "./Pages/ClientDashboard/Component/Wallet";
+// import Navbar from "./Pages/ClientDashboard/Component/Navbar";
+
 const App = () => {
   return (
     <Router>
+      {/* <Navbar /> */}
       <Routes>
         <Route path="" element={<Home />}></Route>
         <Route path="/signup" element={<Signup />}></Route>
@@ -23,6 +27,7 @@ const App = () => {
           path="/ClientDashboard"
           element={<ClientDashboardHome />}
         ></Route>
+        <Route path="/wallet" element={<Wallet />} />
       </Routes>
     </Router>
   );

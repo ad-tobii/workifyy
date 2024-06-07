@@ -1,28 +1,38 @@
+import React from "react";
+import { Link } from "react-router-dom";
 import { FaUserAlt } from "react-icons/fa";
+import Notification from "./Notification";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
   return (
     <nav className="bg-gray-800 p-4 text-white">
       <div className="flex items-center justify-between">
         <div className="ml-12 font-logoFonts text-3xl text-[#32CD32]">
           Workifyy
         </div>
-        <div className="flex items-center space-x-4">
-          <a href="#bid" className="hover:underline">
+        <div className="flex items-center space-x-2">
+          <Link to="/bid" className="px-4 py-2 text-lg hover:underline">
             Bid
-          </a>
-          <a href="#jobs" className="hover:underline">
+          </Link>
+          <Link to="/jobs" className="px-4 py-2 text-lg hover:underline">
             Jobs
-          </a>
-          <a href="#wallet" className="hover:underline">
+          </Link>
+          <Link to="/wallet" className="px-4 py-2 text-lg hover:underline">
             Wallet
-          </a>
-          <a href="#notification" className="hover:underline">
-            Notifications
-          </a>
-          <a href="#profile" className="flex items-center hover:text-gray-400">
-            <FaUserAlt size={20} />
-          </a>
+          </Link>
+          <div className="relative">
+            <Notification />
+          </div>
+          <Link
+            to="/profile"
+            className="flex items-center px-4 py-2 text-lg hover:underline"
+          >
+            <FaUserAlt
+              className="cursor-pointer text-white hover:text-gray-400"
+              size={24}
+            />
+            {/* <span className="ml-2">Profile</span> */}
+          </Link>
         </div>
       </div>
     </nav>
