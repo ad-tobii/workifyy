@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { FaBell } from "react-icons/fa";
 
 type NotificationType = {
   id: number;
@@ -32,21 +33,24 @@ const Notification = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setTimeout(() => setIsHovered(false), 300)}
     >
-      <button className="bg-gray-800 px-4 py-2 text-lg text-white">
+      <button className="flex items-center bg-gray-800 px-4 py-2 text-lg text-white hover:bg-gray-700">
+        <FaBell size={20} className="mr-2" />
         Notifications
       </button>
       {isHovered && (
-        <div className="absolute right-0 z-10 mt-2 w-80 origin-top-right scale-95 transform overflow-hidden rounded-md border border-gray-200 bg-white shadow-lg transition-all  ease-in-out">
+        <div className="absolute right-0 z-10 mt-2 w-80 origin-top-right transform overflow-hidden rounded-md border border-gray-300 bg-white shadow-lg transition duration-300 ease-in-out">
           <div className="p-4">
             {notifications
               .sort((a, b) => b.timestamp.getTime() - a.timestamp.getTime())
               .map((notification) => (
                 <div
                   key={notification.id}
-                  className="border-b p-2 last:border-b-0 hover:bg-gray-100"
+                  className="border-b border-gray-200 p-4 transition duration-150 ease-in-out last:border-b-0 hover:bg-gray-100"
                 >
-                  <p>{notification.message}</p>
-                  <small className="text-gray-500">
+                  <p className="text-md font-semibold text-gray-800">
+                    {notification.message}
+                  </p>
+                  <small className="text-sm text-gray-500">
                     {notification.timestamp.toLocaleString()}
                   </small>
                 </div>
