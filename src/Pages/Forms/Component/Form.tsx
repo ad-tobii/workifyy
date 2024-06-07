@@ -1,7 +1,7 @@
 import { FieldErrors, useForm } from "react-hook-form";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FaUserAlt } from "react-icons/fa";
+
 
 type FormValues = {
   firstname: string;
