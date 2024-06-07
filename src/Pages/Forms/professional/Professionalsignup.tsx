@@ -6,7 +6,7 @@ function Professionalsignup() {
   return (
     <div>
       <FormNav Formnavigation={ProfessionalFormNav} />
-      <Form />
+      <Form text="Sign-up-for-the-work-you-love" />
     </div>
   );
 }

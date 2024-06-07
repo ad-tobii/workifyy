@@ -1,6 +1,8 @@
 import { FieldErrors, useForm } from "react-hook-form";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
+import { FaUserAlt } from "react-icons/fa";
+
 type FormValues = {
   firstname: string;
   lastname: string;
@@ -11,11 +13,16 @@ type FormValues = {
   termsCheckbox: boolean;
 };
 
+type HeadingType = {
+  text:"Sign-up-for-the-work-you-love" | "Sign-up-to-get-Clients"
+}
+
 const onError = (errors: FieldErrors<FormValues>) => {
   console.log("Form errors", errors);
 };
 
-const Clientsignup = () => {
+const Form = ({text}:{text:HeadingType["text"]}) => {
+
   const { register, handleSubmit, formState, reset } = useForm<FormValues>({
     defaultValues: {
       firstname: "",
@@ -42,10 +49,14 @@ const Clientsignup = () => {
   }, [isSubmitSuccessful, reset]);
   return (
     <div className="flex min-h-screen flex-col  bg-black p-4 text-white">
+    
+
       <div className="mt-[10rem] flex flex-col items-center">
         <div className=" w-full max-w-[40rem] rounded-lg bg-zinc-800 p-6">
-          <h1 className=" pb-10 text-center  text-2xl font-bold">
-            Sign up to find work you love
+          <h1 className="pb-3 text-center text-[2rem]">
+            {text === "Sign-up-for-the-work-you-love"
+              ? "Sign up to get the work you love "
+              : "Sign up to hire professionals"}
           </h1>
           <div className="mb-4 flex flex-col space-y-2">
             <button
@@ -54,12 +65,14 @@ const Clientsignup = () => {
             >
               Continue with Apple
             </button>
-            <button
-              type="button"
-              className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-500"
-            >
-              Continue with Google
-            </button>
+          
+              <button
+                type="button"
+                className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-500"
+              >
+                Continue with Google
+              </button>
+           
           </div>
           <div className="mb-4 flex items-center">
             <hr className="flex-grow border-gray-600" />
@@ -220,4 +233,4 @@ const Clientsignup = () => {
   );
 };
 
-export default Clientsignup;
+export default Form;
