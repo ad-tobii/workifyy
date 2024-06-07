@@ -1,4 +1,4 @@
-import { FaFilterCircleDollar,FaCircleCheck,FaThumbsUp} from "react-icons/fa6";
+
 function ClientSection() {
   return (
     <section className=" container ">
