@@ -212,7 +212,7 @@ const Form = ({text}:{text:HeadingType["text"]}) => {
                 </p>
               )}
             </div>
-            <Link to="/ClientDashboard">
+            <Link to="/Jobs">
               <button
                 type="submit"
                 className="w-full rounded bg-[#32cd32] py-2 text-white hover:bg-green-600"
