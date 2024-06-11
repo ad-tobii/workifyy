@@ -1,9 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaUserAlt } from "react-icons/fa";
 import Notification from "./Notification";
 import Bids from "./Bid";
 import Jobs from "./Jobs";
+import ProfileDropdown from "./Profile";
 
 const Navbar: React.FC = () => {
   return (
@@ -21,15 +21,9 @@ const Navbar: React.FC = () => {
           <div className="relative">
             <Notification />
           </div>
-          <Link
-            to="/profile"
-            className="flex items-center px-4 py-2 text-lg hover:underline"
-          >
-            <FaUserAlt
-              className="cursor-pointer text-white hover:text-gray-400"
-              size={24}
-            />
-          </Link>
+          <div className="relative">
+            <ProfileDropdown />
+          </div>
         </div>
       </div>
     </nav>
