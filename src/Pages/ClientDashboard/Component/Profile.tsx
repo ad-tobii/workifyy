@@ -74,7 +74,7 @@ const ProfileDropdown: React.FC = () => {
             <FaSun className="mr-2" />
             Theme: Light mode
           </button>
-          */}
+          
           <Link
             to="/invite"
             className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100"
@@ -82,6 +82,7 @@ const ProfileDropdown: React.FC = () => {
             <FaUserPlus className="mr-2" />
             Invite a Coworker
           </Link>
+          */}
           <Link
             to="/logout"
             className="flex items-center px-4 py-2 text-gray-800 hover:bg-gray-100"
