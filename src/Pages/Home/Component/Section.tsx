@@ -7,8 +7,8 @@ function Section() {
     <div className=" mt-28 flex content-center justify-between  self-center align-middle laptop:flex-col laptop:gap-[4rem]">
       <div className="mx-auto">
         <img
-          src="/assets/Workifyy-illustration.png"
-          className="w-[28rem]  mobile:w-[16rem] miniTablet:w-[18rem]"
+          src="/assets/wrenchimg.jpg"
+          className="w-[28rem] rounded-lg  mobile:w-[16rem] miniTablet:w-[18rem]"
           alt=""
         />
       </div>
