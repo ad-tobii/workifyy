@@ -6,7 +6,7 @@ import {
   ChevronDownIcon,
 } from "@heroicons/react/24/outline";
 import { Link } from "react-router-dom";
-import { FaUserAlt } from "react-icons/fa";
+//import { FaUserAlt } from "react-icons/fa";
 
 // Type definitions for the FormLink and FormProps
 type FormLink = {
