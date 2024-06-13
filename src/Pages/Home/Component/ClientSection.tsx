@@ -38,7 +38,7 @@ function ClientSection() {
               <ul>
                 <li className="pl-3 pt-5 text-3xl font-medium  laptop:text-lg">
                   Convenient, Easy to use and reliable.
-                </li>
+                </li>{/*rand comment */}
               </ul>
               <div>
                 <FaClock className="-ml-40 mt-[3.7rem] text-3xl" />
