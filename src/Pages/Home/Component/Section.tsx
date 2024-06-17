@@ -4,17 +4,19 @@ import { FaShield } from "react-icons/fa6";
 
 function Section() {
   return (
-    <div className=" mt-28 flex content-center justify-between  self-center align-middle laptop:flex-col laptop:gap-[4rem]">
-      <div className="mx-auto">
+    <div className="container">
+
+    <div className=" mt-28 flex justify-between">
+      <div>
         <img
-          src="/assets/wrenchimg.jpg"
-          className="w-[28rem] rounded-lg  mobile:w-[16rem] miniTablet:w-[18rem]"
+          src="/assets/Worker.jpg"
+          className=" w-[25rem] rounded-sm xsMobile:hidden miniMobile:hidden mobile:hidden miniTablet:hidden tablet:hidden miniLaptop:hidden laptop:hidden desktop:w-[50rem]"
           alt=""
         />
       </div>
 
-      <div className="mx-auto">
-        <h1 className="ml-12 content-center self-center pb-3 text-left text-3xl font-bold leading-relaxed text-white miniMobile:pr-3  tablet:text-xl">
+      <div className="">
+        <h1 className="ml-12 content-center self-center pb-3 text-left text-3xl font-bold leading-relaxed text-white xsMobile:text-lg miniMobile:text-lg mobile:text-2xl miniTablet:text-2xl">
           Workifyy your work game, it’s easy
         </h1>
         <div className="flex gap-6   pb-8 text-white  miniTablet:gap-4">
@@ -25,7 +27,7 @@ function Section() {
             <h2 className="text-xl font-bold miniTablet:text-lg">
               No cost to join
             </h2>
-            <li className="font-extralight text-[#32CD32] miniMobile:text-sm miniTablet:pr-10 miniTablet:text-base desktop:max-w-[28rem]">
+            <li className="font-extralight text-[#32CD32] xsMobile:text-sm miniMobile:max-w-[14rem] miniMobile:text-sm miniLaptop:max-w-[30rem]">
               Register and browse professionals, explore projects, or even book
               a consultation.
             </li>
@@ -40,7 +42,7 @@ function Section() {
             <h2 className="text-xl font-bold miniTablet:text-lg">
               Post a job and hire top talent
             </h2>
-            <li className="font-extralight text-[#32CD32]  miniMobile:text-sm  miniTablet:pr-10 miniTablet:text-sm desktop:max-w-[23rem]">
+            <li className="font-extralight text-[#32CD32]  xsMobile:text-sm miniMobile:max-w-[14rem] miniMobile:text-sm miniLaptop:max-w-[30rem]">
               Finding talent doesn’t have to be a chore. Post a job or we can
               search for you!
             </li>
@@ -52,10 +54,10 @@ function Section() {
             <FaShield className="pt-2 text-[1.8rem]" />
           </div>
           <ul>
-            <h2 className="text-xl font-bold miniTablet:text-lg">
+            <h2 className="text-xl font-bold xsMobile:text-lg">
               Work with the best—without breaking the bank
             </h2>
-            <li className="font-extralight text-[#32CD32] miniMobile:text-sm miniTablet:pr-10  miniTablet:text-sm desktop:max-w-[28rem]">
+            <li className="font-extralight text-[#32CD32]  xsMobile:max-w-[15rem] xsMobile:text-sm miniMobile:max-w-[14rem] miniMobile:text-sm miniLaptop:max-w-[30rem]">
               Workifyy makes it affordable to up your work and take advantage of
               low transaction rates.
             </li>
@@ -76,6 +78,7 @@ function Section() {
           </div>
         </div>
       </div>
+    </div>
     </div>
   );
 }
