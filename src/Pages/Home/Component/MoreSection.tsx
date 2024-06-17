@@ -37,7 +37,7 @@ export default function MoreSection() {
     <div className="container mt-[10rem]">
       <div className="mx-auto">
         <div className="text-center">
-          <h1 className="text-[3.5rem] tracking-normal text-[#32CD32] miniMobile:text-white  laptop:text-[2rem]">
+          <h1 className="text-[3.5rem] tracking-normal text-[#32CD32] xsMobile:text-[1.3rem]  miniMobile:text-[1.5rem] mobile:text-[2rem] miniTablet:text-[2.3rem] tablet:text-[2.5rem] miniLaptop:text-[2.8rem]">
             Three steps to be a workifier
           </h1>
         </div>

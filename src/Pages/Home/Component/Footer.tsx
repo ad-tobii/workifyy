@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className=" mt-[12.8rem]">
       <div className="relative mx-auto w-full bg-[#454a52ac] py-8">
-        <div className=" flex justify-between self-center content-center  px-10 pb-8  miniLaptop:flex-col">
+        <div className=" flex content-center justify-between self-center  px-10 pb-8 xsMobile:flex-col miniMobile:flex-col mobile:flex-col  miniTablet:flex-col tablet:flex-col miniLaptop:flex-col laptop:flex-col">
           <div className="mt-[5rem]">
             <a href="#" className="">
               <span className=" font-logoFonts text-[2rem] text-[#32CD32] laptop:text-[1.5rem]">
