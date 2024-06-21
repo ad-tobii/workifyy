@@ -7,8 +7,8 @@ function Section() {
     <div className=" mt-28 flex content-center justify-between  self-center align-middle laptop:flex-col laptop:gap-[4rem]">
       <div className="mx-auto">
         <img
-          src="/assets/wrenchimg.jpg"
-          className="w-[28rem] rounded-lg  mobile:w-[16rem] miniTablet:w-[18rem]"
+          src="/assets/worker2.jpg"
+          className="w-[28rem]  rounded-lg mt-4 mobile:w-[16rem] miniTablet:w-[18rem]"
           alt=""
         />
       </div>
@@ -38,10 +38,10 @@ function Section() {
           </div>
           <ul>
             <h2 className="text-xl font-bold miniTablet:text-lg">
-              Post a job and hire top talent
+              Post a job and hire top professionals.
             </h2>
             <li className="font-extralight text-[#32CD32]  miniMobile:text-sm  miniTablet:pr-10 miniTablet:text-sm desktop:max-w-[23rem]">
-              Finding talent doesn’t have to be a chore. Post a job or we can
+              Finding professionals doesn’t have to be a chore. Post a job or we can
               search for you!
             </li>
           </ul>

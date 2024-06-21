@@ -6,21 +6,14 @@ export default {
       screens: {
         // 1em = 16px
         xsMobile: { max: "20em" }, // max: 320px
-        miniMobile: { max: "25.75em" }, // min: 360px, max: 412px
-        mobile: { max: "25.875em" }, // max: 414px
-        Lmobile: { min: "415px", max: "598px" },
-        miniTablet: { min: "425px", max: "31.25em" }, // min: 425px, max: 500px
-        tablet: { max: "37.5em" }, // max: 600px
-        tabs: { min: "599px", max: "692px" },
-        pads: { min: "693px", max: "1150px" },
-        miniLaptop: { max: "42em" }, // max: 672px
-        laptop: { max: "56.25em" }, // min: 601px, max: 900px
-        desktop: { max: "75em" }, // min: 901px, max: 1200px
-        Lscreens: { min: "1400px" },
-        dmobile: { max: "424px" },
-        lscreens: { min: "675px", max: "754px" },
-        midscreens: { min: "500px", max: "674px" },
-        limit:{min:"754px"},
+        miniMobile: { min: "20.063em", max: "25.75em" }, // min: 321px, max: 412px
+        mobile: { min: "25.813em", max: "25.999em" }, // min: 413px, max: 415px
+        miniTablet: { min: "26em", max: "31.25em" }, // min: 416px, max: 500px
+        tablet: { min: "31.313em", max: "37.5em" }, // min: 501px, max: 600px
+        miniLaptop: { min: "37.563em", max: "42em" }, // min: 601px, max: 672px
+        laptop: { min: "42.063em", max: "56.25em" }, // min: 673px, max: 900px
+        desktop: { min: "56.313em", max: "75em" }, // min: 901px, max: 1200px
+        largeDesktop: { min: "75.063em" }, // min: 1201px and above 
       },
       fontFamily: {
         logoFonts: "Rubik Maps, system-ui;",

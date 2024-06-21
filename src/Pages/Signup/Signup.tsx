@@ -4,7 +4,7 @@ import Header from "./Component/Header";
 import SignupOtions from "./Component/SignupOptions";
 function Signup() {
   return (
-    <div>
+    <div className="w-[100%]">
       <Logo/>
       <Header />
       <SignupOtions/>

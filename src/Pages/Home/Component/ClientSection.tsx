@@ -1,4 +1,8 @@
-import { FaRegCircleCheck, FaCircleDollarToSlot,FaClock } from "react-icons/fa6";
+import {
+  FaRegCircleCheck,
+  FaCircleDollarToSlot,
+  FaClock,
+} from "react-icons/fa6";
 function ClientSection() {
   return (
     <section className="container">
@@ -12,36 +16,37 @@ function ClientSection() {
             Work with the largest network of independent professionals and get
             things done—from quick turnarounds to big transformations.
           </p>
-          <section className="flex content-center items-center justify-center gap-8 self-center pr-2 pt-12 miniMobile:flex-col mobile:flex-col miniTablet:flex-col desktop:gap-2">
-            <div className="flex h-36 w-96 rounded-md bg-[#1b761b] text-2xl font-medium text-white  miniMobile:w-72  mobile:w-80 miniTablet:w-96 laptop:h-36 laptop:text-lg">
+          <section className="flex content-center items-center justify-center gap-8 self-center pr-2 pt-12 miniMobile:flex-col mobile:flex-col miniTablet:flex-col tablet:flex-col desktop:gap-2">
+            <div className="flex h-36 w-96 rounded-md bg-[#1b761b]  font-medium text-white  miniMobile:w-72  mobile:w-80 miniTablet:w-96 tablet:w-[100%] laptop:h-36 ">
               <ul>
-                <li className="pl-3 pt-5 text-3xl font-medium text-white laptop:text-lg">
+                <li className="pl-3 pt-5 text-3xl font-medium text-white mobile:text-[1.9rem] ">
                   Hire trustworthy vetted professionals.
                 </li>
               </ul>
               <div>
-                <FaRegCircleCheck className="-ml-36 mt-[3.7rem] text-3xl" />
+                <FaRegCircleCheck className="-ml-36 mt-[3.7rem] text-3xl mobile:-ml-[5rem] mobile:mt-[6rem] mobile:text-[1.9rem] " />
               </div>
             </div>
-            <div className=" flex h-36 w-96 rounded-md bg-[#1b761b] text-white transition-all duration-300 hover:bg-green-700 miniMobile:w-72 mobile:w-80 miniTablet:w-96 laptop:h-36">
+            <div className=" flex h-36 w-96 rounded-md bg-[#1b761b] text-white transition-all duration-300 hover:bg-green-700 miniMobile:w-72 mobile:w-80 miniTablet:w-96  laptop:h-36">
               <ul>
-                <li className="pl-3 pt-5 text-3xl font-medium text-white laptop:text-lg">
+                <li className="pl-3 pt-5 text-3xl font-medium text-white mobile:text-[1.9rem] ">
                   Get the best quality at low prices.
                 </li>
               </ul>
               <div>
                 {" "}
-                <FaCircleDollarToSlot className="-ml-48 mt-[3.7rem] text-3xl" />
+                <FaCircleDollarToSlot className="-ml-48 mt-[3.7rem] text-3xl mobile:-ml-[5.5rem] mobile:mt-[3.8rem] mobile:text-[1.9rem] " />
               </div>
             </div>
-            <div className="flex h-36 w-96 rounded-md bg-[#1b761b] text-white transition-all duration-300 hover:bg-green-700 miniMobile:w-72 mobile:w-80 miniTablet:w-96 laptop:h-36">
+            <div className="flex h-36 w-96 rounded-md bg-[#1b761b] text-white transition-all duration-300 hover:bg-green-700 miniMobile:w-72 mobile:w-80 miniTablet:w-96 tablet:w-[100%] laptop:h-36">
               <ul>
-                <li className="pl-3 pt-5 text-3xl font-medium  laptop:text-lg">
+                <li className="pl-3 pt-5 text-3xl font-medium   mobile:text-[1.9rem] ">
                   Convenient, Easy to use and reliable.
-                </li>{/*rand comment */}
+                </li>
+                {/*rand comment */}
               </ul>
               <div>
-                <FaClock className="-ml-40 mt-[3.7rem] text-3xl" />
+                <FaClock className="-ml-40 mt-[3.7rem] text-3xl mobile:-ml-[2.9rem] mobile:text-[1.9rem] " />
               </div>
             </div>
           </section>
