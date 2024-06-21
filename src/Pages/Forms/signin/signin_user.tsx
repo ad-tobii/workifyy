@@ -1,6 +1,7 @@
 import { useForm } from "react-hook-form";
 import { useEffect } from "react";
 import FormNav from "../Component/FormNav";
+import { Link } from "react-router-dom";
 
 type FormValues = {
   email: string;
@@ -120,12 +121,14 @@ export const Signin = () => {
                 </p>
                 <hr className="w-[5rem] border-gray-600" />
               </div>
-              <button
-                type="button"
-                className="w-full rounded bg-[#32cd32] py-2 font-bold text-white hover:bg-green-700"
-              >
-                Sign Up
-              </button>
+              <Link to="/signup">
+                <button
+                  type="button"
+                  className="w-full rounded bg-[#32cd32] py-2 font-bold text-white hover:bg-green-700"
+                >
+                  Sign Up
+                </button>
+              </Link>
             </form>
           </div>
         </div>
