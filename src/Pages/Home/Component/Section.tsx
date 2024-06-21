@@ -40,7 +40,7 @@ function Section() {
           </div>
           <ul>
             <h2 className="text-xl font-bold miniTablet:text-lg">
-              Post a job and hire top talent
+              Post a job and hire top professionals.
             </h2>
             <li className="font-extralight text-[#32CD32]  xsMobile:text-sm miniMobile:max-w-[14rem] miniMobile:text-sm miniLaptop:max-w-[30rem]">
               Finding talent doesn’t have to be a chore. Post a job or we can
