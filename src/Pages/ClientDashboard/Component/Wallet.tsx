@@ -62,84 +62,89 @@ const Wallet: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100">
-      <div
-        id="wallet"
-        className="mx-auto max-w-lg rounded-lg bg-white p-6 shadow-lg"
-        style={{
-          backgroundImage: "url('https://yourimageurl.com')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          color: "#333",
-        }}
-      >
-        <div className="mb-6 flex items-center justify-between">
-          <h2 className="text-2xl font-bold text-green-700">My Wallet</h2>
-          <button onClick={toggleBalanceVisibility} className="text-green-700">
-            {isBalanceVisible ? (
-              <EyeSlashIcon className="h-6 w-6" />
-            ) : (
-              <EyeIcon className="h-6 w-6" />
-            )}
-          </button>
-        </div>
-        <div className="mb-6">
-          <div className="flex items-center justify-between">
-            <span className="text-xl font-semibold">
-              Current Balance:{" "}
-              {isBalanceVisible ? `₦${balance.toFixed(2)}` : "****"}
-            </span>
-          </div>
-        </div>
-        <form onSubmit={handleAddFunds} className="mb-6">
-          <div className="mb-4 flex flex-col">
-            <label
-              htmlFor="amount"
-              className="mb-2 font-semibold text-green-700"
+    <div className="min-h-screen bg-[#1e1e23] ">
+      <div className="flex items-center justify-center ">
+        <div
+          id="wallet"
+          className="mx-auto max-w-lg rounded-lg p-6  miniLaptop:mt-12"
+          style={{
+            backgroundImage: "url('https://yourimageurl.com')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            color: "#333",
+          }}
+        >
+          <div className="mb-6 flex items-center justify-between">
+            <h2 className="text-2xl font-bold text-green-700">My Wallet</h2>
+            <button
+              onClick={toggleBalanceVisibility}
+              className="text-green-700"
             >
-              Add Funds
-            </label>
-            <input
-              type="number"
-              id="amount"
-              value={amount}
-              onChange={(e) => setAmount(e.target.value)}
-              className="rounded-md border border-gray-300 p-2"
-              placeholder="Enter amount"
-              required
-            />
+              {isBalanceVisible ? (
+                <EyeSlashIcon className="h-6 w-6" />
+              ) : (
+                <EyeIcon className="h-6 w-6" />
+              )}
+            </button>
           </div>
-          <button
-            type="submit"
-            className="rounded-md bg-green-700 px-4 py-2 text-white hover:bg-green-600"
-            disabled={isLoading}
-          >
-            {isLoading ? "Processing..." : "Add Funds"}
-          </button>
-          {error && <p className="mt-2 text-red-500">{error}</p>}
-        </form>
-        <div>
-          <h3 className="mb-2 text-lg font-semibold text-green-700">
-            Transaction History
-          </h3>
-          <ul className="divide-y divide-gray-200 rounded-lg bg-white shadow-inner">
-            {transactions.map((tx) => (
-              <li
-                key={tx.id}
-                className="flex items-center justify-between px-4 py-2"
+          <div className="mb-6">
+            <div className="flex items-center justify-between">
+              <span className="text-xl font-semibold">
+                Current Balance:{" "}
+                {isBalanceVisible ? `₦${balance.toFixed(2)}` : "****"}
+              </span>
+            </div>
+          </div>
+          <form onSubmit={handleAddFunds} className="mb-6">
+            <div className="mb-4 flex flex-col">
+              <label
+                htmlFor="amount"
+                className="mb-2 font-semibold text-green-700"
               >
-                <span>
-                  {tx.date} {tx.time}
-                </span>
-                <span>₦{tx.amount.toFixed(2)}</span>
-                <span
-                  className={`status ${tx.status === "Completed" ? "text-green-500" : "text-red-500"}`}
+                Add Funds
+              </label>
+              <input
+                type="number"
+                id="amount"
+                value={amount}
+                onChange={(e) => setAmount(e.target.value)}
+                className="rounded-md border border-gray-300 p-2 hover:border-[#32cd32] focus:outline-[#32cd32]"
+                placeholder="Enter amount"
+                required
+              />
+            </div>
+            <button
+              type="submit"
+              className="rounded-md bg-green-700 px-4 py-2 text-white hover:bg-green-600"
+              disabled={isLoading}
+            >
+              {isLoading ? "Processing..." : "Add Funds"}
+            </button>
+            {error && <p className="mt-2 text-red-500">{error}</p>}
+          </form>
+          <div>
+            <h3 className="mb-2 text-lg font-semibold text-green-700">
+              Transaction History
+            </h3>
+            <ul className="divide-y divide-gray-200 rounded-lg text-white shadow-inner">
+              {transactions.map((tx) => (
+                <li
+                  key={tx.id}
+                  className="flex items-center justify-between px-4 py-2"
                 >
-                  {tx.status}
-                </span>
-              </li>
-            ))}
-          </ul>
+                  <span>
+                    {tx.date} {tx.time}
+                  </span>
+                  <span>₦{tx.amount.toFixed(2)}</span>
+                  <span
+                    className={`status ${tx.status === "Completed" ? "text-green-500" : "text-red-500"}`}
+                  >
+                    {tx.status}
+                  </span>
+                </li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
