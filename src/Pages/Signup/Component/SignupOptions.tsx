@@ -1,7 +1,7 @@
 import { FaUser, FaHammer } from "react-icons/fa6";
 import { useState } from "react";
 import SignupBtns from "./SignupBtns";
-function SignupOtions() {
+function SignupOptions() {
   const [selectedRadio, setSelectedRadio] = useState<string | null>(null);
 
   const handleRadioChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -75,4 +75,4 @@ function SignupOtions() {
   );
 }
 
-export default SignupOtions;
+export default SignupOptions;

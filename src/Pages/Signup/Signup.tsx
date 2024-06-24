@@ -1,21 +1,15 @@
-
 import Logo from "./Component/Logo";
 import Header from "./Component/Header";
-import SignupOtions from "./Component/SignupOptions";
+import SignupOptions from "./Component/SignupOptions";
 function Signup() {
   return (
-    <div className="w-[100%]">
-      <Logo/>
+    <div >
+      <Logo />
       <Header />
-      <SignupOtions/>
+      <SignupOptions />
     </div>
   );
 }
-
-
-
-
-
 
 /*function Ball() {
   return (
