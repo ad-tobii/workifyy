@@ -10,9 +10,8 @@
     font-family: "Poppins", sans-serif;
   }
 
-  body {
-    @apply bg-[#000000];
-  }
+body {
+    @apply bg-[#000000]; }
 }
 .container{
   @apply max-w-[1250px] mx-auto
