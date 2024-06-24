@@ -7,7 +7,7 @@ import ProfileDropdown from "./Profile";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-zinc-950 p-4 text-white">
+    <nav className=" p-4 text-white">
       <div className="flex items-center justify-between">
         <div className="ml-12 font-logoFonts text-3xl text-[#32CD32]">
           Workifyy
