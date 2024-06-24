@@ -62,11 +62,11 @@ const Wallet: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen bg-[#1e1e23] ">
+    <div className="min-h-screen bg-[#151519] ">
       <div className="flex items-center justify-center ">
         <div
           id="wallet"
-          className="mx-auto max-w-lg rounded-lg p-6  miniLaptop:mt-12"
+          className="mx-auto max-w-lg rounded-lg p-6 bg-[#1e1e23]  miniLaptop:mt-12"
           style={{
             backgroundImage: "url('https://yourimageurl.com')",
             backgroundSize: "cover",
@@ -89,7 +89,7 @@ const Wallet: React.FC = () => {
           </div>
           <div className="mb-6">
             <div className="flex items-center justify-between">
-              <span className="text-xl font-semibold">
+              <span className="text-xl text-white font-semibold">
                 Current Balance:{" "}
                 {isBalanceVisible ? `₦${balance.toFixed(2)}` : "****"}
               </span>
