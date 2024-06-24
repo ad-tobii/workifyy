@@ -41,5 +41,4 @@ function SignupBtns({ selectedRadio }: FootProps) {
     </>
   );
 }
-
 export default SignupBtns;

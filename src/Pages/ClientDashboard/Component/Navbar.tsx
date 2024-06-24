@@ -7,15 +7,15 @@ import ProfileDropdown from "./Profile";
 
 const Navbar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 p-4 text-white">
+    <nav className="bg-zinc-950 p-4 text-white">
       <div className="flex items-center justify-between">
         <div className="ml-12 font-logoFonts text-3xl text-[#32CD32]">
           Workifyy
         </div>
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center mr-4 space-x-3">
           <Bids />
           <Jobs />
-          <Link to="/wallet" className="px-4 py-2 text-lg hover:underline">
+          <Link to="/wallet" className="px-4 py-2 text-lg hover:underline hover:text-[#32cd32]">
             Wallet
           </Link>
           <div className="relative">

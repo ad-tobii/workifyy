@@ -6,10 +6,10 @@ import Signup from "./Pages/Signup/Signup";
 import { Signin } from "./Pages/Forms/signin/signin_user";
 import SignupasProfessional from "./Pages/Forms/professional/Professionalsignup";
 import ClientSignup from "./Pages/Forms/client/Clientsignup";
-/* import ClientDashboardHome from "./Pages/ClientDashboard/Home"; */
+import ClientDashboard from "./Pages/ClientDashboard/Home"; 
 import Jobs from "./Pages/ProfessionalDashboard/Jobs";
-// import Wallet from "./Pages/ClientDashboard/Component/Wallet";
-// import Navbar from "./Pages/ClientDashboard/Component/Navbar";
+import Wallet from "./Pages/ClientDashboard/Component/Wallet";
+
 
 const App = () => {
   return (
@@ -28,8 +28,12 @@ const App = () => {
           path="/Jobs"
           element={<Jobs />}
         ></Route>
-        {/* <Route path="/wallet" element={<Wallet />} /> */}
+        <Route path="/clientDashboard" element={<ClientDashboard />}></Route>
+        <Route path="/wallet" element={<Wallet />} />
+        
+        
       </Routes>
+      
     </Router>
   );
 };
