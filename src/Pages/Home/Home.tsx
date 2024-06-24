@@ -25,7 +25,9 @@ function Home() {
       <div>
         <ClientSection />
       </div>
-
+      <a href="/ClientDashboard" className="text-5xl">
+        click me
+      </a>
       <div>
         <Footer />
       </div>
