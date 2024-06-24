@@ -4,7 +4,7 @@ import JobButton from "./Component/JobButton";
 
 const ClientDashboard = () => {
   return (
-    <div className="bg-[#151519]  min-h-screen ">
+    <div className="  min-h-screen ">
       <Navbar />
       <main className="w-max  p-8">
         <HeroSection />

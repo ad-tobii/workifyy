@@ -33,7 +33,7 @@ const Notification = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setTimeout(() => setIsHovered(false), 300)}
     >
-      <button className="hover:text-[#32cd32] flex items-center bg-zinc-950 px-4 py-2 text-lg text-white">
+      <button className="hover:text-[#32cd32] flex items-center  px-4 py-2 text-lg text-white">
         <FaBell size={20} className="mr-2" />
         Notifications
       </button>

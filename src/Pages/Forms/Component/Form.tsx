@@ -49,8 +49,6 @@ const Form = ({text}:{text:HeadingType["text"]}) => {
   }, [isSubmitSuccessful, reset]);
   return (
     <div className="flex min-h-screen flex-col  bg-black p-4 text-white">
-    
-
       <div className="mt-[10rem] flex flex-col items-center">
         <div className=" w-full max-w-[40rem] rounded-lg bg-zinc-800 p-6">
           <h1 className="pb-3 text-center text-[2rem]">
@@ -65,14 +63,13 @@ const Form = ({text}:{text:HeadingType["text"]}) => {
             >
               Continue with Apple
             </button>
-          
-              <button
-                type="button"
-                className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-500"
-              >
-                Continue with Google
-              </button>
-           
+
+            <button
+              type="button"
+              className="rounded bg-[#32cd32] px-4 py-2 text-white hover:bg-green-500"
+            >
+              Continue with Google
+            </button>
           </div>
           <div className="mb-4 flex items-center">
             <hr className="flex-grow border-gray-600" />
@@ -212,7 +209,7 @@ const Form = ({text}:{text:HeadingType["text"]}) => {
                 </p>
               )}
             </div>
-            <Link to="/Jobs">
+            <Link to="/clientDashboard">
               <button
                 type="submit"
                 className="w-full rounded bg-[#32cd32] py-2 text-white hover:bg-green-600"
