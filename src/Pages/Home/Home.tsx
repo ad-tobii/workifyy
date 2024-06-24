@@ -25,12 +25,7 @@ function Home() {
       <div>
         <ClientSection />
       </div>
-      <a href="/HeroSection" className="text-5xl text-[#32CD32]">
-        click me
-      </a>
-      <a href="/Navbar" className="text-5xl text-[#32CD32]">
-        click me
-      </a>
+     
       <div>
         <Footer />
       </div>
