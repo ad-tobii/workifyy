@@ -8,7 +8,7 @@ const BaseFooter = () => {
     <div className="border-t border-solid border-[#ffffff33] ">
       <div className="flex justify-between  py-5 xsMobile:flex-col xsMobile:items-center xsMobile:gap-10 miniMobile:flex-col miniMobile:items-center miniMobile:gap-10 mobile:flex-col mobile:items-center mobile:gap-10 miniTablet:flex-col miniTablet:items-center miniTablet:gap-10 tablet:flex-col tablet:items-center tablet:gap-10  miniLaptop:flex-col miniLaptop:items-center miniLaptop:gap-10 laptop:justify-around ">
         <div>
-          <p className="text-[1.3rem]  text-[#32CD32]   miniTablet:text-[1.4rem] tablet:text-center ">
+          <p className="text-[1.3rem]  text-[#32CD32] miniMobile:text-[1rem]   miniTablet:text-[1.4rem] tablet:text-center ">
             &copy; {year}WORKIFYY. All rights reserved
           </p>
         </div>

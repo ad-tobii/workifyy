@@ -11,7 +11,7 @@ const Bids = () => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setTimeout(() => setIsHovered(false), 300)}
     >
-      <button className="flex items-center bg-zinc-950 px-4 py-2 text-lg text-white hover:text-[#32cd32] ">
+      <button className="flex items-center  px-4 py-2 text-lg text-white hover:text-[#32cd32] ">
         Bids
         <FaChevronDown className="ml-2" />
       </button>
