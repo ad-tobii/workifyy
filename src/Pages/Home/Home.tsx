@@ -25,7 +25,7 @@ function Home() {
       <div>
         <ClientSection />
       </div>
-      <a href="/ClientDashboard" className="text-5xl">
+      <a href="/ClientDashboard" className="text-5xl text-[#32CD32]">
         click me
       </a>
       <div>
