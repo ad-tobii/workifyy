@@ -45,3 +45,22 @@ input[type="radio"]:checked + label:after{
   color: white;
   background-color: #32cd32;
 }
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.vecimg {
+  animation: bounce 2.5s  infinite;
+}
+.backdrop-blur {
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+        }

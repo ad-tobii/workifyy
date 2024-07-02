@@ -17,10 +17,10 @@ export default function Nav({ children }: NavProps) {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
-    <div className=" relative  w-full bg-[url('/assets/ClientSection2.jpg')] bg-cover bg-center  bg-no-repeat ">
+    <div className=" relative   w-full bg-[url('/assets/ClientSection2.jpg')] bg-cover bg-center  bg-no-repeat ">
       <div className="pointer-events-none absolute inset-0 z-10 bg-black bg-opacity-50" />
 
-      <header className="absolute inset-x-0 top-0 z-30 border-b p-3">
+      <header className="absolute mobile:backdrop-blur miniMobile:backdrop-blur miniMobile:fixed mobile:fixed inset-x-0 top-0 z-30 border-b p-3">
         <nav
           className=" container flex items-center justify-between pt-1"
           aria-label="Global"

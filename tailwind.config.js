@@ -3,6 +3,7 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      
       screens: {
         // 1em = 16px
         xsMobile: { max: "20em" }, // max: 320px
@@ -13,7 +14,7 @@ export default {
         miniLaptop: { min: "37.563em", max: "42em" }, // min: 601px, max: 672px
         laptop: { min: "42.063em", max: "56.25em" }, // min: 673px, max: 900px
         desktop: { min: "56.313em", max: "75em" }, // min: 901px, max: 1200px
-        largeDesktop: { min: "75.063em" }, // min: 1201px and above 
+        largeDesktop: { min: "75.063em" }, // min: 1201px and above
       },
       fontFamily: {
         logoFonts: "Rubik Maps, system-ui;",

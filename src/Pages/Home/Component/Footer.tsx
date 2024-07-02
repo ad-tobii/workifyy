@@ -5,7 +5,7 @@ import BaseFooter from "./BaseFooter";
 function Footer() {
   return (
     <footer className=" mt-[12.8rem]">
-      <div className="relative mx-auto w-full bg-[#454a52ac] py-8">
+      <div className="relative mx-auto w-full bg-zinc-900 py-8">
         <div className=" flex content-center justify-between self-center  px-10 pb-8 xsMobile:flex-col miniMobile:flex-col mobile:flex-col  miniTablet:flex-col tablet:flex-col miniLaptop:flex-col laptop:flex-col">
           <div className="mt-[5rem]">
             <a href="#" className="">
